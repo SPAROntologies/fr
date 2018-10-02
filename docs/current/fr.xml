@@ -202,7 +202,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/fr/hasReviewerConfidence">
         <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Review"/>
-        <rdfs:range rdf:resource="http://purl.org/spar/fr/ConfidenceConcept"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between a review the confidence set by the author about the review topic. As the review can be written only by one author the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution.</rdfs:comment>
         <rdfs:label xml:lang="en">has reviewer confidence</rdfs:label>
     </owl:ObjectProperty>
@@ -215,7 +215,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/spar/fr/hasSubReviewer">
         <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Review"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:label xml:lang="en">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</rdfs:label>
+        <rdfs:comment xml:lang="en">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</rdfs:comment>
         <rdfs:label xml:lang="en">has sub-reviewer</rdfs:label>
     </owl:ObjectProperty>
     
@@ -311,7 +311,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://purl.org/spar/fr/confidenceValue">
-        <rdfs:domain rdf:resource="http://purl.org/spar/fr/ConfidenceConcept"/>
+        <rdfs:domain rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Confidence value of expertise in the review topic given by the reviwer</rdfs:comment>
         <rdfs:label xml:lang="en">confidence value</rdfs:label>
@@ -357,6 +357,57 @@
 
 
     <owl:Class rdf:about="http://purl.org/dc/terms/Agent"/>
+    
+
+
+    <!-- http://purl.org/spar/bido/DiscreteReviewRatingScale -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/DiscreteReviewRatingScale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ReviewRatingScale"/>
+        <rdfs:label xml:lang="en">Discrete review reating scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/DiscreteReviewerConfidenceScale -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceScale"/>
+        <rdfs:label xml:lang="en">Discrete reviewer confidence scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/ReviewRatingScale -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/ReviewRatingScale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Review rating scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/ReviewerConfidenceScale -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/ReviewerConfidenceScale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Reviwer confidence scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/ReviewerConfidenceValue -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/ReviewerConfidenceValue">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">The set of values of a given confidence scale.</rdfs:comment>
+        <rdfs:label xml:lang="en">Confidence concept</rdfs:label>
+    </owl:Class>
     
 
 
@@ -427,28 +478,6 @@
     
 
 
-    <!-- http://purl.org/spar/fr/ConfidenceConcept -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fr/ConfidenceConcept">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">The set of values of a given confidence scale.</rdfs:comment>
-        <rdfs:label xml:lang="en">Confidence concept</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fr/ConfidenceConceptScheme -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fr/ConfidenceConceptScheme">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">A scale defining the confidence of a reviewer for a given topic.</rdfs:comment>
-        <rdfs:label xml:lang="en">Confidence concept scheme</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/spar/fr/ConveningOrganization -->
 
 
@@ -460,28 +489,6 @@
     
 
 
-    <!-- http://purl.org/spar/fr/DiscreteConfidenceConceptScheme -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fr/DiscreteConfidenceConceptScheme">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fr/ConfidenceConceptScheme"/>
-        <rdfs:comment xml:lang="en">A discrete scale defining the confidence of a reviewer for a given topic.</rdfs:comment>
-        <rdfs:label xml:lang="en">Discrete confidence concept scheme</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fr/DiscreteRatingConceptScheme -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fr/DiscreteRatingConceptScheme">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fr/RatingConceptScheme"/>
-        <rdfs:comment xml:lang="en">A discrete scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
-        <rdfs:label xml:lang="en">Discrete rating concept scheme</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/spar/fr/RatingConcept -->
 
 
@@ -489,17 +496,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">The set of values of a given rating scale.</rdfs:comment>
         <rdfs:label xml:lang="en">Rating concept</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fr/RatingConceptScheme -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fr/RatingConceptScheme">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">A scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
-        <rdfs:label xml:lang="en">Rating concept scheme</rdfs:label>
     </owl:Class>
     
 

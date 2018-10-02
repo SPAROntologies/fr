@@ -1,7 +1,7 @@
 <h2  id="crossreference" class="list">Cross reference for FAIR reviews ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by FAIR reviews ontology.
+This section provides details for each class and property defined by [Ontology Name].
 <div id="classes">
-   <h3 id="classes-headline" class="list">Classes</h3>
+   <h3 id="classes" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">
@@ -9,21 +9,19 @@ This section provides details for each class and property defined by FAIR review
          </a>
       </li>
       <li>
-         <a href="#/ConfidenceConcept" title="http://purl.org/spar/fr/ConfidenceConcept">Confidence concept</a>
-      </li>
-      <li>
-         <a href="#/ConfidenceConceptScheme" title="http://purl.org/spar/fr/ConfidenceConceptScheme">Confidence concept scheme</a>
+         <a href="#http://purl.org/spar/bido/ReviewerConfidenceValue"
+            title="http://purl.org/spar/bido/ReviewerConfidenceValue">Confidence concept</a>
       </li>
       <li>
          <a href="#/ConveningOrganization" title="http://purl.org/spar/fr/ConveningOrganization">Convening organization</a>
       </li>
       <li>
-         <a href="#/DiscreteConfidenceConceptScheme"
-            title="http://purl.org/spar/fr/DiscreteConfidenceConceptScheme">Discrete confidence concept scheme</a>
+         <a href="#http://purl.org/spar/bido/DiscreteReviewRatingScale"
+            title="http://purl.org/spar/bido/DiscreteReviewRatingScale">Discrete review reating scale</a>
       </li>
       <li>
-         <a href="#/DiscreteRatingConceptScheme"
-            title="http://purl.org/spar/fr/DiscreteRatingConceptScheme">Discrete rating concept scheme</a>
+         <a href="#http://purl.org/spar/bido/DiscreteReviewerConfidenceScale"
+            title="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale">Discrete reviewer confidence scale</a>
       </li>
       <li>
          <a href="#http://purl.org/spar/fabio/Expression" title="http://purl.org/spar/fabio/Expression">
@@ -48,9 +46,6 @@ This section provides details for each class and property defined by FAIR review
          <a href="#/RatingConcept" title="http://purl.org/spar/fr/RatingConcept">Rating concept</a>
       </li>
       <li>
-         <a href="#/RatingConceptScheme" title="http://purl.org/spar/fr/RatingConceptScheme">Rating concept scheme</a>
-      </li>
-      <li>
          <a href="#http://purl.org/spar/fabio/Reply" title="http://purl.org/spar/fabio/Reply">
             <span>reply</span>
          </a>
@@ -61,7 +56,14 @@ This section provides details for each class and property defined by FAIR review
          </a>
       </li>
       <li>
+         <a href="#http://purl.org/spar/bido/ReviewRatingScale" title="http://purl.org/spar/bido/ReviewRatingScale">Review rating scale</a>
+      </li>
+      <li>
          <a href="#/ReviewVersion" title="http://purl.org/spar/fr/ReviewVersion">Review Version</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/spar/bido/ReviewerConfidenceScale"
+            title="http://purl.org/spar/bido/ReviewerConfidenceScale">Reviwer confidence scale</a>
       </li>
       <li>
          <a href="#/TrackingSystem" title="http://purl.org/spar/fr/TrackingSystem">Tracking system</a>
@@ -94,19 +96,19 @@ This section provides details for each class and property defined by FAIR review
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#/hasSubReviewer" title="http://purl.org/spar/fr/hasSubReviewer">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</a>
+            <a href="#/hasSubReviewer" title="http://purl.org/spar/fr/hasSubReviewer">has sub-reviewer</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/releasedBy" title="http://purl.org/spar/fr/releasedBy">released by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="/ConfidenceConcept">
+   <div class="entity" id="http://purl.org/spar/bido/ReviewerConfidenceValue">
       <h3>Confidence concept<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/ConfidenceConcept</p>
+         <strong>IRI:</strong> http://purl.org/spar/bido/ReviewerConfidenceValue</p>
       <div class="comment">
          <span class="markdown">The set of values of a given confidence scale.</span>
       </div>
@@ -125,31 +127,6 @@ This section provides details for each class and property defined by FAIR review
          <dd>
             <a href="#/hasReviewerConfidence" title="http://purl.org/spar/fr/hasReviewerConfidence">has reviewer confidence</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="/ConfidenceConceptScheme">
-      <h3>Confidence concept scheme<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/ConfidenceConceptScheme</p>
-      <div class="comment">
-         <span class="markdown">A scale defining the confidence of a reviewer for a given topic.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted"
-                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#/DiscreteConfidenceConceptScheme"
-               title="http://purl.org/spar/fr/DiscreteConfidenceConceptScheme">Discrete confidence concept scheme</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -176,38 +153,33 @@ This section provides details for each class and property defined by FAIR review
          </dd>
       </dl>
    </div>
-   <div class="entity" id="/DiscreteConfidenceConceptScheme">
-      <h3>Discrete confidence concept scheme<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://purl.org/spar/bido/DiscreteReviewRatingScale">
+      <h3>Discrete review reating scale<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/DiscreteConfidenceConceptScheme</p>
-      <div class="comment">
-         <span class="markdown">A discrete scale defining the confidence of a reviewer for a given topic.</span>
-      </div>
+         <strong>IRI:</strong> http://purl.org/spar/bido/DiscreteReviewRatingScale</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#/ConfidenceConceptScheme" title="http://purl.org/spar/fr/ConfidenceConceptScheme">Confidence concept scheme</a>
+            <a href="#http://purl.org/spar/bido/ReviewRatingScale" title="http://purl.org/spar/bido/ReviewRatingScale">Review rating scale</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="/DiscreteRatingConceptScheme">
-      <h3>Discrete rating concept scheme<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale">
+      <h3>Discrete reviewer confidence scale<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/DiscreteRatingConceptScheme</p>
-      <div class="comment">
-         <span class="markdown">A discrete scale defining the rating given by a reviewer for a specific scientific contribution.</span>
-      </div>
+         <strong>IRI:</strong> http://purl.org/spar/bido/DiscreteReviewerConfidenceScale</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#/RatingConceptScheme" title="http://purl.org/spar/fr/RatingConceptScheme">Rating concept scheme</a>
+            <a href="#http://purl.org/spar/bido/ReviewerConfidenceScale"
+               title="http://purl.org/spar/bido/ReviewerConfidenceScale">Reviwer confidence scale</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -309,31 +281,6 @@ This section provides details for each class and property defined by FAIR review
          </dd>
       </dl>
    </div>
-   <div class="entity" id="/RatingConceptScheme">
-      <h3>Rating concept scheme<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/RatingConceptScheme</p>
-      <div class="comment">
-         <span class="markdown">A scale defining the rating given by a reviewer for a specific scientific contribution.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted"
-                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#/DiscreteRatingConceptScheme"
-               title="http://purl.org/spar/fr/DiscreteRatingConceptScheme">Discrete rating concept scheme</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://purl.org/spar/fabio/Reply">
       <h3>reply<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -364,13 +311,35 @@ This section provides details for each class and property defined by FAIR review
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#/hasSubReviewer" title="http://purl.org/spar/fr/hasSubReviewer">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#/hasRating" title="http://purl.org/spar/fr/hasRating">has rating</a>
+            <a href="#/hasRating" title="http://purl.org/spar/fr/hasRating">has rating</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/hasReviewerConfidence" title="http://purl.org/spar/fr/hasReviewerConfidence">has reviewer confidence</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hasSubReviewer" title="http://purl.org/spar/fr/hasSubReviewer">has sub-reviewer</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/issuedAt" title="http://purl.org/spar/fr/issuedAt">issued at</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/issuedFor" title="http://purl.org/spar/fr/issuedFor">issued for</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/releasedBy" title="http://purl.org/spar/fr/releasedBy">released by</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/spar/bido/ReviewRatingScale">
+      <h3>Review rating scale<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/bido/ReviewRatingScale</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://purl.org/spar/bido/DiscreteReviewRatingScale"
+               title="http://purl.org/spar/bido/DiscreteReviewRatingScale">Discrete review reating scale</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -388,6 +357,28 @@ This section provides details for each class and property defined by FAIR review
          <dt>has super-classes</dt>
          <dd>
             <span class="dotted" title="http://purl.org/spar/fabio/Comment">comment</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/spar/bido/ReviewerConfidenceScale">
+      <h3>Reviwer confidence scale<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/bido/ReviewerConfidenceScale</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://purl.org/spar/bido/DiscreteReviewerConfidenceScale"
+               title="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale">Discrete reviewer confidence scale</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -447,6 +438,9 @@ This section provides details for each class and property defined by FAIR review
          <a href="#/hasReviewerConfidence" title="http://purl.org/spar/fr/hasReviewerConfidence">has reviewer confidence</a>
       </li>
       <li>
+         <a href="#/hasSubReviewer" title="http://purl.org/spar/fr/hasSubReviewer">has sub-reviewer</a>
+      </li>
+      <li>
          <a href="#/issuedAt" title="http://purl.org/spar/fr/issuedAt">issued at</a>
       </li>
       <li>
@@ -454,9 +448,6 @@ This section provides details for each class and property defined by FAIR review
       </li>
       <li>
          <a href="#/releasedBy" title="http://purl.org/spar/fr/releasedBy">released by</a>
-      </li>
-      <li>
-         <a href="#/hasSubReviewer" title="http://purl.org/spar/fr/hasSubReviewer">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</a>
       </li>
    </ul>
    <div class="entity" id="/hasRating">
@@ -503,7 +494,33 @@ This section provides details for each class and property defined by FAIR review
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#/ConfidenceConcept" title="http://purl.org/spar/fr/ConfidenceConcept">Confidence concept</a>
+               <a href="#http://purl.org/spar/bido/ReviewerConfidenceValue"
+                  title="http://purl.org/spar/bido/ReviewerConfidenceValue">Confidence concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasSubReviewer">
+      <h3>has sub-reviewer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/fr/hasSubReviewer</p>
+      <div class="comment">
+         <span class="markdown">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/spar/fabio/Review" title="http://purl.org/spar/fabio/Review">review</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -584,30 +601,8 @@ This section provides details for each class and property defined by FAIR review
          </dl>
       </div>
    </div>
-   <div class="entity" id="/hasSubReviewer">
-      <h3>The relation between a review and agents that have contributed to the overall review as sub-reviwers.<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/hasSubReviewer</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://purl.org/spar/fabio/Review" title="http://purl.org/spar/fabio/Review">review</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">agent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
 </div><div id="dataproperties">
-   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <h3 id="dataproperties" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#/confidenceValue" title="http://purl.org/spar/fr/confidenceValue">confidence value</a>
@@ -635,7 +630,8 @@ This section provides details for each class and property defined by FAIR review
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#/ConfidenceConcept" title="http://purl.org/spar/fr/ConfidenceConcept">Confidence concept</a>
+               <a href="#http://purl.org/spar/bido/ReviewerConfidenceValue"
+                  title="http://purl.org/spar/bido/ReviewerConfidenceValue">Confidence concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
