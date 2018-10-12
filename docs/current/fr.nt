@@ -98,7 +98,7 @@
 # http://purl.org/spar/fr/hasRating
 <http://purl.org/spar/fr/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Review> .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/RatingConcept> .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fr/RatingConcept> .
 <http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and a given rating assigned by a reviewer."@en .
 <http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "has rating"@en .
 # 
@@ -172,7 +172,7 @@
 # 
 # http://purl.org/spar/fr/ratingValue
 <http://purl.org/spar/fr/ratingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/fr/ratingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/RatingConcept> .
+<http://purl.org/spar/fr/ratingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/RatingConcept> .
 <http://purl.org/spar/fr/ratingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://purl.org/spar/fr/ratingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical value of the rating given to a review."@en .
 <http://purl.org/spar/fr/ratingValue> <http://www.w3.org/2000/01/rdf-schema#label> "rating value"@en .
@@ -256,11 +256,11 @@
 <http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en .
 <http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Convening organization"@en .
 # 
-# http://purl.org/spar/bido/RatingConcept
-<http://purl.org/spar/bido/RatingConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/bido/RatingConcept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://purl.org/spar/bido/RatingConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given rating scale."@en .
-<http://purl.org/spar/bido/RatingConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Rating concept"@en .
+# http://purl.org/spar/fr/RatingConcept
+<http://purl.org/spar/fr/RatingConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr/RatingConcept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/spar/fr/RatingConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given rating scale."@en .
+<http://purl.org/spar/fr/RatingConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Rating concept"@en .
 # 
 # http://purl.org/spar/fr/ReviewVersion
 <http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

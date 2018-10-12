@@ -21,6 +21,7 @@
 	owl:priorVersion <https://w3id.org/fr/def/core#> ;
 	dc:creator <https://w3id.org/people/idafensp> ;
 	dcterms:issued "2017-11-07"^^xsd:date ;
+	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	owl:versionInfo "1.0" ;
 	vann:preferredNamespaceUri "http://purl.org/spar/fr/" ;
 	dc:title "FAIR reviews ontology"@en ;
@@ -128,7 +129,7 @@ dcterms:license a owl:ObjectProperty .
 
 :hasRating a owl:ObjectProperty ;
 	rdfs:domain <http://purl.org/spar/fabio/Review> ;
-	rdfs:range <http://purl.org/spar/bido/RatingConcept> ;
+	rdfs:range :RatingConcept ;
 	rdfs:comment "The relation between a review and a given rating assigned by a reviewer."@en ;
 	rdfs:label "has rating"@en .
 # 
@@ -214,7 +215,7 @@ dcterms:modified a owl:DatatypeProperty .
 # http://purl.org/spar/fr/ratingValue
 
 :ratingValue a owl:DatatypeProperty ;
-	rdfs:domain <http://purl.org/spar/bido/RatingConcept> ;
+	rdfs:domain :RatingConcept ;
 	rdfs:range rdfs:Literal ;
 	rdfs:comment "Numerical value of the rating given to a review."@en ;
 	rdfs:label "rating value"@en .
@@ -249,13 +250,6 @@ dcterms:Agent a owl:Class .
 <http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> a owl:Class ;
 	rdfs:subClassOf <http://purl.org/spar/bido/ReviewerConfidenceScale> ;
 	rdfs:label "Discrete reviewer confidence scale"@en .
-# 
-# http://purl.org/spar/bido/RatingConcept
-
-<http://purl.org/spar/bido/RatingConcept> a owl:Class ;
-	rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
-	rdfs:comment "The set of values of a given rating scale."@en ;
-	rdfs:label "Rating concept"@en .
 # 
 # http://purl.org/spar/bido/ReviewRatingScale
 
@@ -321,6 +315,13 @@ dcterms:Agent a owl:Class .
 	rdfs:comment "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en ;
 	rdfs:label "Convening organization"@en .
 # 
+# http://purl.org/spar/fr/RatingConcept
+
+:RatingConcept a owl:Class ;
+	rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "The set of values of a given rating scale."@en ;
+	rdfs:label "Rating concept"@en .
+# 
 # http://purl.org/spar/fr/ReviewVersion
 
 :ReviewVersion a owl:Class ;
@@ -375,8 +376,7 @@ foaf:Person a owl:Class ;
 # 
 # http://purl.org/spar/fr
 
-<http://purl.org/spar/fr> a owl:NamedIndividual ;
-	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://purl.org/spar/fr> a owl:NamedIndividual .
 # 
 # http://purl.org/spar/fr/
 
