@@ -129,7 +129,7 @@ dcterms:license a owl:ObjectProperty .
 
 :hasRating a owl:ObjectProperty ;
 	rdfs:domain <http://purl.org/spar/fabio/Review> ;
-	rdfs:range :RatingConcept ;
+	rdfs:range <http://purl.org/spar/bido/ReviewRatingValue> ;
 	rdfs:comment "The relation between a review and a given rating assigned by a reviewer."@en ;
 	rdfs:label "has rating"@en .
 # 
@@ -204,18 +204,17 @@ dcterms:modified a owl:DatatypeProperty .
 	rdfs:domain <http://purl.org/spar/fabio/Endeavour> ;
 	rdfs:range xsd:anyURI .
 # 
-# http://purl.org/spar/fr/confidenceValue
+# http://purl.org/spar/bido/hasConfidenceValue
 
-:confidenceValue a owl:DatatypeProperty ;
-	rdfs:domain <http://purl.org/spar/bido/ReviewerConfidenceValue> ;
-	rdfs:range rdfs:Literal ;
+<http://purl.org/spar/bido/hasConfidenceValue> a owl:DatatypeProperty ;
+    rdfs:isDefinedBy "http://purl.org/spar/bido-review-measures/" ;
 	rdfs:comment "Confidence value of expertise in the review topic given by the reviwer"@en ;
-	rdfs:label "confidence value"@en .
+	rdfs:label "has confidence value"@en .
 # 
 # http://purl.org/spar/fr/ratingValue
 
 :ratingValue a owl:DatatypeProperty ;
-	rdfs:domain :RatingConcept ;
+	rdfs:domain <http://purl.org/spar/bido/ReviewRatingValue> ;
 	rdfs:range rdfs:Literal ;
 	rdfs:comment "Numerical value of the rating given to a review."@en ;
 	rdfs:label "rating value"@en .
@@ -254,21 +253,21 @@ dcterms:Agent a owl:Class .
 # http://purl.org/spar/bido/ReviewRatingScale
 
 <http://purl.org/spar/bido/ReviewRatingScale> a owl:Class ;
-	rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    rdfs:isDefinedBy "http://purl.org/spar/bido-review-measures/" ;
 	rdfs:label "Review rating scale"@en .
 # 
 # http://purl.org/spar/bido/ReviewerConfidenceScale
 
 <http://purl.org/spar/bido/ReviewerConfidenceScale> a owl:Class ;
-	rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    rdfs:isDefinedBy "http://purl.org/spar/bido-review-measures/" ;
 	rdfs:label "Reviwer confidence scale"@en .
 # 
 # http://purl.org/spar/bido/ReviewerConfidenceValue
 
 <http://purl.org/spar/bido/ReviewerConfidenceValue> a owl:Class ;
-	rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+    rdfs:isDefinedBy "http://purl.org/spar/bido-review-measures/" ;
 	rdfs:comment "The set of values of a given confidence scale."@en ;
-	rdfs:label "Confidence concept"@en .
+	rdfs:label "Reviewer confidence value"@en .
 # 
 # http://purl.org/spar/bido/ScholarlyVenueManagementSystem
 
@@ -315,12 +314,12 @@ dcterms:Agent a owl:Class .
 	rdfs:comment "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en ;
 	rdfs:label "Convening organization"@en .
 # 
-# http://purl.org/spar/fr/RatingConcept
+# http://purl.org/spar/bido/ReviewRatingValue
 
-:RatingConcept a owl:Class ;
-	rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://purl.org/spar/bido/ReviewRatingValue> a owl:Class ;
+	rdfs:isDefinedBy "http://purl.org/spar/bido-review-measures/" ;
 	rdfs:comment "The set of values of a given rating scale."@en ;
-	rdfs:label "Rating concept"@en .
+	rdfs:label "Review rating concept"@en .
 # 
 # http://purl.org/spar/fr/ReviewVersion
 

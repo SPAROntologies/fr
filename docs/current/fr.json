@@ -1,553 +1,868 @@
-{
-  "@context": {
-    "dc": "http://purl.org/dc/elements/1.1/",
-    "dcterms": "http://purl.org/dc/terms/",
-    "foaf": "http://xmlns.com/foaf/0.1/",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "vann": "http://purl.org/vocab/vann/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
-  },
-  "@graph": [
-    {
-      "@id": "http://purl.org/spar/fr/confidenceValue",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "Confidence value of expertise in the review topic given by the reviwer"
-      },
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/bido/ReviewerConfidenceValue"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "confidence value"
-      },
-      "rdfs:range": {
-        "@id": "rdfs:Literal"
-      }
-    },
-    {
-      "@id": "skos:ConceptScheme",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "skos:inScheme",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "dc:language",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "http://purl.org/spar/fabio/Expression",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/fabio/Endeavour"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/hasSubReviewer",
-      "@type": "owl:ObjectProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The relation between a review and agents that have contributed to the overall review as sub-reviwers."
-      },
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fabio/Review"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "has sub-reviewer"
-      },
-      "rdfs:range": {
-        "@id": "foaf:Agent"
-      }
-    },
-    {
-      "@id": "http://purl.org/NET/rdflicense/cc-by4.0",
-      "@type": "owl:NamedIndividual"
-    },
-    {
-      "@id": "http://purl.org/spar/bido/DiscreteReviewerConfidenceScale",
-      "@type": "owl:Class",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Discrete reviewer confidence scale"
-      },
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/bido/ReviewerConfidenceScale"
-      }
-    },
-    {
-      "@id": "http://lexvo.org/ontology#Language",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "Language of the scientific contribution (paper, review, etc.)."
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Language"
-      }
-    },
-    {
-      "@id": "dcterms:language",
-      "@type": [
-        "owl:ObjectProperty",
-        "owl:AnnotationProperty"
+[
+   {
+      "@id":"http://lexvo.org/ontology#Language",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
       ],
-      "rdfs:range": {
-        "@id": "dcterms:LinguisticSystem"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "dc:language"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fabio/Reply",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/fabio/Work"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fabio/Work",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/fabio/Endeavour"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/bido/ReviewRatingScale",
-      "@type": "owl:Class",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Review rating scale"
-      },
-      "rdfs:subClassOf": {
-        "@id": "skos:ConceptScheme"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/TrackingSystem",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The platform where the review process takes place."
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Tracking system"
-      },
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/bido/ScholarlyVenueManagementSystem"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/ReviewVersion",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A version of a given review, defining its content and rating, which may vary over the time ."
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Review Version"
-      },
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/fabio/Comment"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/bido/ReviewerConfidenceValue",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The set of values of a given confidence scale."
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Confidence concept"
-      },
-      "rdfs:subClassOf": {
-        "@id": "skos:Concept"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/ConveningOrganization",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Convening organization"
-      },
-      "rdfs:subClassOf": {
-        "@id": "foaf:Agent"
-      }
-    },
-    {
-      "@id": "dcterms:creator",
-      "@type": [
-        "owl:AnnotationProperty",
-        "owl:ObjectProperty"
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"Language of the scientific contribution (paper, review, etc.).",
+            "@language":"en"
+         }
       ],
-      "rdfs:range": {
-        "@id": "dcterms:Agent"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "dc:creator"
-      }
-    },
-    {
-      "@id": "dc:date",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "skos:Concept",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "foaf:Agent",
-      "@type": "owl:Class",
-      "rdfs:isDefinedBy": {
-        "@id": "foaf:"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fabio/Review",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/fabio/Work"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/",
-      "@type": "owl:NamedIndividual"
-    },
-    {
-      "@id": "dc:rights",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "http://purl.org/spar/fr/hasRating",
-      "@type": "owl:ObjectProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The relation between a review and a given rating assigned by a reviewer."
-      },
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fabio/Review"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "has rating"
-      },
-      "rdfs:range": {
-        "@id": "http://purl.org/spar/fr/RatingConcept"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/issuedAt",
-      "@type": "owl:ObjectProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The relation between a review and the tracking or scholarly venue management system where the reviewing process took place."
-      },
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fabio/Review"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "issued at"
-      },
-      "rdfs:range": {
-        "@id": "http://purl.org/spar/fr/TrackingSystem"
-      }
-    },
-    {
-      "@id": "http://www.w3.org/ns/odrl/2/Policy",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A non-empty group of Permissions and/or Prohibitions."
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Policy"
-      }
-    },
-    {
-      "@id": "dcterms:license",
-      "@type": [
-        "owl:AnnotationProperty",
-        "owl:ObjectProperty"
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Language",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/NET/rdflicense/cc-by4.0",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#NamedIndividual"
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/elements/1.1/creator",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/elements/1.1/date",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/elements/1.1/language",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/elements/1.1/rights",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/terms/Agent",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/terms/LicenseDocument"
+   },
+   {
+      "@id":"http://purl.org/dc/terms/LinguisticSystem"
+   },
+   {
+      "@id":"http://purl.org/dc/terms/creator",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty",
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
       ],
-      "rdfs:range": {
-        "@id": "dcterms:LicenseDocument"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "dc:rights"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/releasedBy",
-      "@type": "owl:ObjectProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The relation between the review and the agent publishing it. It might be the the author of the review or conference or journal to which the scientific resource was submitted to."
-      },
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fabio/Review"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "released by"
-      },
-      "rdfs:range": {
-        "@id": "foaf:Agent"
-      }
-    },
-    {
-      "@id": "dcterms:Agent",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "http://purl.org/spar/fr/ratingValue",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "Numerical value of the rating given to a review."
-      },
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fr/RatingConcept"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "rating value"
-      },
-      "rdfs:range": {
-        "@id": "rdfs:Literal"
-      }
-    },
-    {
-      "@id": "foaf:Person",
-      "@type": "owl:Class",
-      "rdfs:isDefinedBy": {
-        "@id": "foaf:"
-      },
-      "rdfs:subClassOf": {
-        "@id": "foaf:Agent"
-      }
-    },
-    {
-      "@id": "skos:prefLabel",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "skos:closeMatch",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "http://purl.org/spar/fr/issuedFor",
-      "@type": "owl:ObjectProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The realation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."
-      },
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fabio/Review"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "issued for"
-      },
-      "rdfs:range": {
-        "@id": "http://purl.org/spar/fr/ConveningOrganization"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr/RatingConcept",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The set of values of a given rating scale."
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Rating concept"
-      },
-      "rdfs:subClassOf": {
-        "@id": "skos:Concept"
-      }
-    },
-    {
-      "@id": "dcterms:issued",
-      "@type": [
-        "owl:AnnotationProperty",
-        "owl:DatatypeProperty"
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf":[
+         {
+            "@id":"http://purl.org/dc/elements/1.1/creator"
+         }
       ],
-      "rdfs:range": {
-        "@id": "rdfs:Literal"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "dc:date"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/bido/ReviewerConfidenceScale",
-      "@type": "owl:Class",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Reviwer confidence scale"
-      },
-      "rdfs:subClassOf": {
-        "@id": "skos:ConceptScheme"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/bido/DiscreteReviewRatingScale",
-      "@type": "owl:Class",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Discrete review reating scale"
-      },
-      "rdfs:subClassOf": {
-        "@id": "http://purl.org/spar/bido/ReviewRatingScale"
-      }
-    },
-    {
-      "@id": "skos:definition",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "dc:creator",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "http://purl.org/spar/datacite/Identifier",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "es",
-        "@value": "Un identificador que identifica de forma única a una entidad - tal como una agencia de financiación, una persona y un recurso - que pertenece a un esquema particular, como los especificados por individuos de la clase datacite:IdentifierScheme."
-      },
-      "rdfs:label": {
-        "@language": "es",
-        "@value": "identificador"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fabio/Endeavour",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "http://purl.org/spar/fabio/hasURL",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fabio/Endeavour"
-      },
-      "rdfs:range": {
-        "@id": "xsd:anyURI"
-      }
-    },
-    {
-      "@id": "xsd:date",
-      "@type": "rdfs:Datatype"
-    },
-    {
-      "@id": "http://purl.org/spar/fr/hasReviewerConfidence",
-      "@type": "owl:ObjectProperty",
-      "rdfs:comment": "Relation between a review the confidence set by the author about the review topic. As the review can be written only by one author the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution.",
-      "rdfs:domain": {
-        "@id": "http://purl.org/spar/fabio/Review"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "has reviewer confidence"
-      },
-      "rdfs:range": {
-        "@id": "http://purl.org/spar/bido/ReviewerConfidenceValue"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/bido/ScholarlyVenueManagementSystem",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "dcterms:modified",
-      "@type": [
-        "owl:AnnotationProperty",
-        "owl:DatatypeProperty"
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://purl.org/dc/terms/Agent"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/terms/issued",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty",
+         "http://www.w3.org/2002/07/owl#DatatypeProperty"
       ],
-      "rdfs:range": {
-        "@id": "rdfs:Literal"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "dc:date"
-      }
-    },
-    {
-      "@id": "http://purl.org/spar/fr",
-      "@type": [
-        "owl:Ontology",
-        "owl:NamedIndividual"
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf":[
+         {
+            "@id":"http://purl.org/dc/elements/1.1/date"
+         }
       ],
-      "dc:contributor": "Silvio Peroni",
-      "dc:creator": [
-        {
-          "@id": "https://w3id.org/people/mpoveda"
-        },
-        {
-          "@id": "https://w3id.org/people/idafensp"
-        }
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://www.w3.org/2000/01/rdf-schema#Literal"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/terms/language",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty",
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
       ],
-      "dc:publisher": {
-        "@id": "http://www.oeg-upm.net/"
-      },
-      "dc:title": {
-        "@language": "en",
-        "@value": "FAIR reviews ontology"
-      },
-      "dcterms:created": {
-        "@type": "xsd:date",
-        "@value": "2017-09-01"
-      },
-      "dcterms:issued": {
-        "@type": "xsd:date",
-        "@value": "2017-11-07"
-      },
-      "dcterms:license": {
-        "@id": "http://purl.org/NET/rdflicense/cc-by4.0"
-      },
-      "dcterms:modified": {
-        "@type": "xsd:date",
-        "@value": "2018-07-03"
-      },
-      "owl:imports": {
-        "@id": "http://purl.org/spar/datacite/"
-      },
-      "owl:priorVersion": {
-        "@id": "https://w3id.org/fr/def/core#"
-      },
-      "owl:versionInfo": "1.0",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "This vocabulary represents scientific reviews. This model is used to annotate http://fairreviews.linkeddata.es/ data."
-      },
-      "vann:preferredNamespacePrefix": {
-        "@type": "xsd:date",
-        "@value": "fr"
-      },
-      "vann:preferredNamespaceUri": "http://purl.org/spar/fr/"
-    },
-    {
-      "@id": "http://purl.org/spar/fabio/Comment",
-      "@type": "owl:Class"
-    }
-  ]
-}
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf":[
+         {
+            "@id":"http://purl.org/dc/elements/1.1/language"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://purl.org/dc/terms/LinguisticSystem"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/terms/license",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty",
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf":[
+         {
+            "@id":"http://purl.org/dc/elements/1.1/rights"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://purl.org/dc/terms/LicenseDocument"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/dc/terms/modified",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty",
+         "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf":[
+         {
+            "@id":"http://purl.org/dc/elements/1.1/date"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://www.w3.org/2000/01/rdf-schema#Literal"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/DiscreteReviewRatingScale",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/bido/ReviewRatingScale"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Discrete review reating scale",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/DiscreteReviewerConfidenceScale",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/bido/ReviewerConfidenceScale"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Discrete reviewer confidence scale",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/ReviewRatingScale",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy":[
+         {
+            "@value":"http://purl.org/spar/bido-review-measures/"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Review rating scale",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/ReviewRatingValue",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy":[
+         {
+            "@value":"http://purl.org/spar/bido-review-measures/"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The set of values of a given rating scale.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Review rating concept",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/ReviewerConfidenceScale",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy":[
+         {
+            "@value":"http://purl.org/spar/bido-review-measures/"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Reviwer confidence scale",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/ReviewerConfidenceValue",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy":[
+         {
+            "@value":"http://purl.org/spar/bido-review-measures/"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The set of values of a given confidence scale.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Reviewer confidence value",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/ScholarlyVenueManagementSystem",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/bido/hasConfidenceValue",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy":[
+         {
+            "@value":"http://purl.org/spar/bido-review-measures/"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"Confidence value of expertise in the review topic given by the reviwer",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"has confidence value",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/datacite/"
+   },
+   {
+      "@id":"http://purl.org/spar/datacite/Identifier",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"Un identificador que identifica de forma única a una entidad - tal como una agencia de financiación, una persona y un recurso - que pertenece a un esquema particular, como los especificados por individuos de la clase datacite:IdentifierScheme.",
+            "@language":"es"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"identificador",
+            "@language":"es"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fabio/Comment",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fabio/Endeavour",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fabio/Expression",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/fabio/Endeavour"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fabio/Reply",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/fabio/Work"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fabio/Review",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/fabio/Work"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fabio/Work",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/fabio/Endeavour"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fabio/hasURL",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/fabio/Endeavour"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://www.w3.org/2001/XMLSchema#anyURI"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Ontology",
+         "http://www.w3.org/2002/07/owl#NamedIndividual"
+      ],
+      "http://www.w3.org/2002/07/owl#imports":[
+         {
+            "@id":"http://purl.org/spar/datacite/"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"This vocabulary represents scientific reviews. This model is used to annotate http://fairreviews.linkeddata.es/ data.",
+            "@language":"en"
+         }
+      ],
+      "http://purl.org/dc/terms/modified":[
+         {
+            "@value":"2018-07-03",
+            "@type":"http://www.w3.org/2001/XMLSchema#date"
+         }
+      ],
+      "http://purl.org/dc/elements/1.1/contributor":[
+         {
+            "@value":"Silvio Peroni"
+         }
+      ],
+      "http://purl.org/dc/terms/created":[
+         {
+            "@value":"2017-09-01",
+            "@type":"http://www.w3.org/2001/XMLSchema#date"
+         }
+      ],
+      "http://www.w3.org/2002/07/owl#priorVersion":[
+         {
+            "@id":"https://w3id.org/fr/def/core#"
+         }
+      ],
+      "http://purl.org/dc/elements/1.1/creator":[
+         {
+            "@id":"https://w3id.org/people/idafensp"
+         },
+         {
+            "@id":"https://w3id.org/people/mpoveda"
+         }
+      ],
+      "http://purl.org/dc/terms/issued":[
+         {
+            "@value":"2017-11-07",
+            "@type":"http://www.w3.org/2001/XMLSchema#date"
+         }
+      ],
+      "http://purl.org/dc/terms/license":[
+         {
+            "@id":"http://purl.org/NET/rdflicense/cc-by4.0"
+         }
+      ],
+      "http://www.w3.org/2002/07/owl#versionInfo":[
+         {
+            "@value":"1.0"
+         }
+      ],
+      "http://purl.org/vocab/vann/preferredNamespaceUri":[
+         {
+            "@value":"http://purl.org/spar/fr/"
+         }
+      ],
+      "http://purl.org/dc/elements/1.1/title":[
+         {
+            "@value":"FAIR reviews ontology",
+            "@language":"en"
+         }
+      ],
+      "http://purl.org/dc/elements/1.1/publisher":[
+         {
+            "@id":"http://www.oeg-upm.net/"
+         }
+      ],
+      "http://purl.org/vocab/vann/preferredNamespacePrefix":[
+         {
+            "@value":"fr",
+            "@type":"http://www.w3.org/2001/XMLSchema#date"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#NamedIndividual"
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/ConveningOrganization",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://xmlns.com/foaf/0.1/Agent"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Convening organization",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/ReviewVersion",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/fabio/Comment"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"A version of a given review, defining its content and rating, which may vary over the time .",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Review Version",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/TrackingSystem",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://purl.org/spar/bido/ScholarlyVenueManagementSystem"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The platform where the review process takes place.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Tracking system",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/hasRating",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/fabio/Review"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://purl.org/spar/bido/ReviewRatingValue"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The relation between a review and a given rating assigned by a reviewer.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"has rating",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/hasReviewerConfidence",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/fabio/Review"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://purl.org/spar/bido/ReviewerConfidenceValue"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"Relation between a review the confidence set by the author about the review topic. As the review can be written only by one author the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution."
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"has reviewer confidence",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/hasSubReviewer",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/fabio/Review"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://xmlns.com/foaf/0.1/Agent"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The relation between a review and agents that have contributed to the overall review as sub-reviwers.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"has sub-reviewer",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/issuedAt",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/fabio/Review"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://purl.org/spar/fr/TrackingSystem"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The relation between a review and the tracking or scholarly venue management system where the reviewing process took place.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"issued at",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/issuedFor",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/fabio/Review"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://purl.org/spar/fr/ConveningOrganization"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The realation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review).",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"issued for",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/ratingValue",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/bido/ReviewRatingValue"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://www.w3.org/2000/01/rdf-schema#Literal"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"Numerical value of the rating given to a review.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"rating value",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://purl.org/spar/fr/releasedBy",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain":[
+         {
+            "@id":"http://purl.org/spar/fabio/Review"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range":[
+         {
+            "@id":"http://xmlns.com/foaf/0.1/Agent"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"The relation between the review and the agent publishing it. It might be the the author of the review or conference or journal to which the scientific resource was submitted to.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"released by",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://www.oeg-upm.net/"
+   },
+   {
+      "@id":"http://www.w3.org/2000/01/rdf-schema#Datatype"
+   },
+   {
+      "@id":"http://www.w3.org/2000/01/rdf-schema#Literal"
+   },
+   {
+      "@id":"http://www.w3.org/2001/XMLSchema#anyURI"
+   },
+   {
+      "@id":"http://www.w3.org/2001/XMLSchema#date",
+      "@type":[
+         "http://www.w3.org/2000/01/rdf-schema#Datatype"
+      ]
+   },
+   {
+      "@id":"http://www.w3.org/2002/07/owl#AnnotationProperty"
+   },
+   {
+      "@id":"http://www.w3.org/2002/07/owl#Class"
+   },
+   {
+      "@id":"http://www.w3.org/2002/07/owl#DatatypeProperty"
+   },
+   {
+      "@id":"http://www.w3.org/2002/07/owl#NamedIndividual"
+   },
+   {
+      "@id":"http://www.w3.org/2002/07/owl#ObjectProperty"
+   },
+   {
+      "@id":"http://www.w3.org/2002/07/owl#Ontology"
+   },
+   {
+      "@id":"http://www.w3.org/2004/02/skos/core#Concept",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ]
+   },
+   {
+      "@id":"http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ]
+   },
+   {
+      "@id":"http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ]
+   },
+   {
+      "@id":"http://www.w3.org/2004/02/skos/core#definition",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+   },
+   {
+      "@id":"http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ]
+   },
+   {
+      "@id":"http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+   },
+   {
+      "@id":"http://www.w3.org/ns/odrl/2/Policy",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment":[
+         {
+            "@value":"A non-empty group of Permissions and/or Prohibitions.",
+            "@language":"en"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label":[
+         {
+            "@value":"Policy",
+            "@language":"en"
+         }
+      ]
+   },
+   {
+      "@id":"http://xmlns.com/foaf/0.1/"
+   },
+   {
+      "@id":"http://xmlns.com/foaf/0.1/Agent",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy":[
+         {
+            "@id":"http://xmlns.com/foaf/0.1/"
+         }
+      ]
+   },
+   {
+      "@id":"http://xmlns.com/foaf/0.1/Person",
+      "@type":[
+         "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf":[
+         {
+            "@id":"http://xmlns.com/foaf/0.1/Agent"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy":[
+         {
+            "@id":"http://xmlns.com/foaf/0.1/"
+         }
+      ]
+   },
+   {
+      "@id":"https://w3id.org/fr/def/core#"
+   },
+   {
+      "@id":"https://w3id.org/people/idafensp"
+   },
+   {
+      "@id":"https://w3id.org/people/mpoveda"
+   }
+]

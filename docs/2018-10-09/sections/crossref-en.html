@@ -10,7 +10,7 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#http://purl.org/spar/bido/ReviewerConfidenceValue"
-            title="http://purl.org/spar/bido/ReviewerConfidenceValue">Confidence concept</a>
+            title="http://purl.org/spar/bido/ReviewerConfidenceValue">Reviewer Confidence Value</a>
       </li>
       <li>
          <a href="#/ConveningOrganization" title="http://purl.org/spar/fr/ConveningOrganization">Convening organization</a>
@@ -43,7 +43,7 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#http://www.w3.org/ns/odrl/2/Policy" title="http://www.w3.org/ns/odrl/2/Policy">Policy</a>
       </li>
       <li>
-         <a href="#/RatingConcept" title="http://purl.org/spar/fr/RatingConcept">Rating concept</a>
+         <a href="#/ReviewRatingValue" title="http://purl.org/spar/bido/ReviewRatingValue">Review rating value</a>
       </li>
       <li>
          <a href="#http://purl.org/spar/fabio/Reply" title="http://purl.org/spar/fabio/Reply">
@@ -103,7 +103,7 @@ This section provides details for each class and property defined by [Ontology N
       </dl>
    </div>
    <div class="entity" id="http://purl.org/spar/bido/ReviewerConfidenceValue">
-      <h3>Confidence concept<sup class="type-c" title="class">c</sup>
+      <h3>Reviewer Confidence Value<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -120,7 +120,7 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#/confidenceValue" title="http://purl.org/spar/fr/confidenceValue">confidence value</a>
+            <a href="#/hasConfidenceValue" title="http://purl.org/spar/bido/hasConfidenceValue">has confidence value</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -253,13 +253,13 @@ This section provides details for each class and property defined by [Ontology N
          <span class="markdown">A non-empty group of Permissions and/or Prohibitions.</span>
       </div>
    </div>
-   <div class="entity" id="/RatingConcept">
-      <h3>Rating concept<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="/ReviewRatingValue">
+      <h3>Review rating value<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/RatingConcept</p>
+         <strong>IRI:</strong> http://purl.org/spar/bido/ReviewRatingValue</p>
       <div class="comment">
          <span class="markdown">The set of values of a given rating scale.</span>
       </div>
@@ -469,7 +469,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#/RatingConcept" title="http://purl.org/spar/fr/RatingConcept">Rating concept</a>
+               <a href="#/ReviewRatingValue" title="http://purl.org/spar/bido/ReviewRatingValue">Review rating value</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -495,7 +495,7 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has range</dt>
             <dd>
                <a href="#http://purl.org/spar/bido/ReviewerConfidenceValue"
-                  title="http://purl.org/spar/bido/ReviewerConfidenceValue">Confidence concept</a>
+                  title="http://purl.org/spar/bido/ReviewerConfidenceValue">Reviewer Confidence Value</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -605,7 +605,7 @@ This section provides details for each class and property defined by [Ontology N
    <h3 id="dataproperties" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#/confidenceValue" title="http://purl.org/spar/fr/confidenceValue">confidence value</a>
+         <a href="#/hasConfidenceValue" title="http://purl.org/spar/bido/hasConfidenceValue">has confidence value</a>
       </li>
       <li>
          <a href="#http://purl.org/spar/fabio/hasURL" title="http://purl.org/spar/fabio/hasURL">
@@ -616,13 +616,13 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#/ratingValue" title="http://purl.org/spar/fr/ratingValue">rating value</a>
       </li>
    </ul>
-   <div class="entity" id="/confidenceValue">
-      <h3>confidence value<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/hasConfidenceValue">
+      <h3>has confidence value<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/spar/fr/confidenceValue</p>
+         <strong>IRI:</strong> http://purl.org/spar/bido/hasConfidenceValue</p>
       <div class="comment">
          <span class="markdown">Confidence value of expertise in the review topic given by the reviwer</span>
       </div>
@@ -631,7 +631,7 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has domain</dt>
             <dd>
                <a href="#http://purl.org/spar/bido/ReviewerConfidenceValue"
-                  title="http://purl.org/spar/bido/ReviewerConfidenceValue">Confidence concept</a>
+                  title="http://purl.org/spar/bido/ReviewerConfidenceValue">Reviewer Confidence Value</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -676,7 +676,7 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#/RatingConcept" title="http://purl.org/spar/fr/RatingConcept">Rating concept</a>
+               <a href="#/ReviewRatingValue" title="http://purl.org/spar/bido/ReviewRatingValue">Review rating value</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
