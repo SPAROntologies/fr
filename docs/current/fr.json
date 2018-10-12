@@ -249,7 +249,7 @@
         "@value": "has rating"
       },
       "rdfs:range": {
-        "@id": "http://purl.org/spar/fr/RatingConcept"
+        "@id": "http://purl.org/spar/bido/RatingConcept"
       }
     },
     {
@@ -325,7 +325,7 @@
         "@value": "Numerical value of the rating given to a review."
       },
       "rdfs:domain": {
-        "@id": "http://purl.org/spar/fr/RatingConcept"
+        "@id": "http://purl.org/spar/bido/RatingConcept"
       },
       "rdfs:label": {
         "@language": "en",
@@ -372,7 +372,7 @@
       }
     },
     {
-      "@id": "http://purl.org/spar/fr/RatingConcept",
+      "@id": "http://purl.org/spar/bido/RatingConcept",
       "@type": "owl:Class",
       "rdfs:comment": {
         "@language": "en",

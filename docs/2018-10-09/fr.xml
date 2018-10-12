@@ -190,7 +190,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/fr/hasRating">
         <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Review"/>
-        <rdfs:range rdf:resource="http://purl.org/spar/fr/RatingConcept"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/bido/RatingConcept"/>
         <rdfs:comment xml:lang="en">The relation between a review and a given rating assigned by a reviewer.</rdfs:comment>
         <rdfs:label xml:lang="en">has rating</rdfs:label>
     </owl:ObjectProperty>
@@ -323,7 +323,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://purl.org/spar/fr/ratingValue">
-        <rdfs:domain rdf:resource="http://purl.org/spar/fr/RatingConcept"/>
+        <rdfs:domain rdf:resource="http://purl.org/spar/bido/RatingConcept"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Numerical value of the rating given to a review.</rdfs:comment>
         <rdfs:label xml:lang="en">rating value</rdfs:label>
@@ -489,10 +489,10 @@
     
 
 
-    <!-- http://purl.org/spar/fr/RatingConcept -->
+    <!-- http://purl.org/spar/bido/RatingConcept -->
 
 
-    <owl:Class rdf:about="http://purl.org/spar/fr/RatingConcept">
+    <owl:Class rdf:about="http://purl.org/spar/bido/RatingConcept">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">The set of values of a given rating scale.</rdfs:comment>
         <rdfs:label xml:lang="en">Rating concept</rdfs:label>
