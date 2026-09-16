@@ -1,0 +1,6 @@
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the rating given to a review."@en .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ReviewRatingValue> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "has rating value"@en .

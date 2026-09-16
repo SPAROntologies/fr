@@ -1,0 +1,5 @@
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ReviewRatingScale> .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#label> "discrete review rating scale"@en .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the rating given by a reviewer for a specific scientific contribution."@en .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .

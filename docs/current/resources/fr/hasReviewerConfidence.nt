@@ -1,0 +1,8 @@
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution." .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ReviewerConfidenceValue> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 .\n\n	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .\n    " .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#label> "has reviewer confidence"@en .

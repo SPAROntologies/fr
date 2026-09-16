@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb5">
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/AgentIdentifier">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb5"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+    <rdfs:comment xml:lang="en">An identifier that uniquely identities an individual agent.</rdfs:comment>
+    <rdfs:label xml:lang="en">agent identifier</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

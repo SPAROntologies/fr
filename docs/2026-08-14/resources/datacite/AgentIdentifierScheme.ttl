@@ -1,0 +1,13 @@
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+datacite:AgentIdentifierScheme a owl:Class ;
+    rdfs:label "agent identifier scheme"@en ;
+    rdfs:comment "The identifier scheme used to identify an agent."@en ;
+    rdfs:isDefinedBy datacite: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf datacite:usesIdentifierScheme ] ;
+            owl:someValuesFrom datacite:AgentIdentifier ],
+        datacite:IdentifierScheme .
+

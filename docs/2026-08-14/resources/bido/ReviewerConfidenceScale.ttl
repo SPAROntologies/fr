@@ -1,0 +1,11 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+
+bido:ReviewerConfidenceScale a owl:Class ;
+    rdfs:label "reviewer confidence scale"@en ;
+    rdfs:comment "A scale defining the confidence of a reviewer for a given topic."@en ;
+    rdfs:isDefinedBy bido: ;
+    rdfs:subClassOf skos1:ConceptScheme .
+

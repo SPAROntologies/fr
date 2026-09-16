@@ -1,0 +1,12 @@
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+literal:hasLiteralValue a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has literal value"@en ;
+    rdfs:comment "The value that a reified literal represents."@en ;
+    rdfs:domain literal:Literal ;
+    rdfs:isDefinedBy <http://purl.org/spar/literal/> ;
+    rdfs:range rdfs:Literal .
+

@@ -1,0 +1,10 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:language a owl:AnnotationProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has language"@en ;
+    rdfs:comment "A language of the resource."@en ;
+    rdfs:isDefinedBy dcterms: .
+

@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "http://lexvo.org/ontology#Language",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Groups of human language variants that are or were spoken, written, or signed at some point in time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://lexvo.org/ontology#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "language"
+      }
+    ]
+  }
+]

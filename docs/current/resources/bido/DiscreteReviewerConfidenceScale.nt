@@ -1,0 +1,5 @@
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ReviewerConfidenceScale> .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the confidence of a reviewer for a given topic."@en .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#label> "discrete reviewer confidence scale"@en .

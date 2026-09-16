@@ -1,0 +1,22 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:hasRating a owl:ObjectProperty ;
+    rdfs:label "has rating"@en ;
+    vann:example """
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasRating bido:sa-sr-bl-wacc .
+
+	bido:sa-sr-bl-wacc a bido:ReviewRatingValue .
+    """ ;
+    rdfs:comment "The relation between a review and a given rating assigned by a reviewer."@en ;
+    rdfs:domain fr:ReviewVersion ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:range bido:ReviewRatingValue ;
+    vs:term_status reg:statusStable .
+

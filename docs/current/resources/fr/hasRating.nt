@@ -1,0 +1,8 @@
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "has rating"@en .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and a given rating assigned by a reviewer."@en .
+<http://purl.org/spar/fr/hasRating> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc .\n\n	bido:sa-sr-bl-wacc a bido:ReviewRatingValue .\n    " .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ReviewRatingValue> .
