@@ -1,0 +1,44 @@
+[
+  {
+    "@id": "http://purl.org/spar/fr/hasReviewerConfidence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n\t:my-review-version a fr:ReviewVersion ;\n\t\tfr:hasReviewerConfidence bido:acl-1-5-acl4 .\n\n\tbido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/fr/ReviewVersion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fr/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has reviewer confidence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/bido/ReviewerConfidenceValue"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

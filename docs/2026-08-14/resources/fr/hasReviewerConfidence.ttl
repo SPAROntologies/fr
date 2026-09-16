@@ -1,0 +1,22 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:hasReviewerConfidence a owl:ObjectProperty ;
+    rdfs:label "has reviewer confidence"@en ;
+    vann:example """
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasReviewerConfidence bido:acl-1-5-acl4 .
+
+	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .
+    """ ;
+    rdfs:comment "Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution." ;
+    rdfs:domain fr:ReviewVersion ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:range bido:ReviewerConfidenceValue ;
+    vs:term_status reg:statusStable .
+

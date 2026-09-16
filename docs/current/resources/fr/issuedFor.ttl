@@ -1,0 +1,23 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:issuedFor a owl:ObjectProperty ;
+    rdfs:label "issued for"@en ;
+    vann:example """
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version ;
+		fr:issuedFor :my-convening-organization .
+
+	:my-convening-organization a fr:ConveningOrganization .
+    """ ;
+    rdfs:comment "The realation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en ;
+    rdfs:domain fabio:Review ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:range fr:ConveningOrganization ;
+    vs:term_status reg:statusStable .
+

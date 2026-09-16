@@ -1,0 +1,9 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bido:ScholarlyVenueManagementSystem a owl:Class ;
+    rdfs:label "scholarly venue management system"@en ;
+    rdfs:comment "A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues."@en ;
+    rdfs:isDefinedBy bido: .
+

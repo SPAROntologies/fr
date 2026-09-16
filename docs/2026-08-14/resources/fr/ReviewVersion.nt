@@ -1,0 +1,7 @@
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Comment> .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "A version of a given review, defining its content and rating, which may vary over the time."@en .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#label> "review version"@en .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/fr/ReviewVersion> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version .\n\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;\n		fr:hasSubReviewer :my-person ;\n		fr:releasedBy :my-conference .\n    " .

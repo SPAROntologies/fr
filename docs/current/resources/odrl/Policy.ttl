@@ -1,0 +1,9 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+odrl:Policy a owl:Class ;
+    rdfs:label "policy"@en ;
+    rdfs:comment "A non-empty group of permissions and/or prohibitions."@en ;
+    rdfs:isDefinedBy odrl: .
+

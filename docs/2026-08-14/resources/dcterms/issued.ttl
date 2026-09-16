@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:issued a owl:AnnotationProperty,
+        owl:DatatypeProperty ;
+    rdfs:label "has date issued"@en ;
+    rdfs:comment "Date of formal issuance of the resource."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:range rdfs:Literal .
+

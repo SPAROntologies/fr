@@ -1,0 +1,9 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bido:ReviewerConfidenceValue a owl:Class ;
+    rdfs:label "reviewer confidence value"@en ;
+    rdfs:comment "The set of values of a given confidence scale."@en ;
+    rdfs:isDefinedBy bido: .
+

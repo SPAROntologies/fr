@@ -1,0 +1,19 @@
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+datacite:Identifier a owl:Class ;
+    rdfs:label "identifier"@en ;
+    rdfs:comment "An identifier that uniquely identities an entity, such as a funding agency, a person or a resource."@en ;
+    rdfs:isDefinedBy datacite: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass datacite:IdentifierScheme ;
+            owl:onProperty datacite:usesIdentifierScheme ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf datacite:hasIdentifier ] ],
+        literal:Literal .
+

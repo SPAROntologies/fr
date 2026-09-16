@@ -1,0 +1,12 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+
+bido:isDefinedIn a owl:ObjectProperty ;
+    rdfs:label "is defined in ranking"@en ;
+    rdfs:comment "A relation between a ranking category and the ranking that defines it."@en ;
+    rdfs:domain bido:CategorialBibliometricData ;
+    rdfs:isDefinedBy bido: ;
+    rdfs:range skos1:ConceptScheme .
+

@@ -1,0 +1,7 @@
+<http://purl.org/spar/fr/ConveningOrganization> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "convening organization"@en .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

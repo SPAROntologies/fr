@@ -1,0 +1,22 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:hasSubReviewer a owl:ObjectProperty ;
+    rdfs:label "has sub-reviewer"@en ;
+    vann:example """
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasSubReviewer :my-person .
+	
+	:my-person a foaf:Agent .
+    """ ;
+    rdfs:comment "The relation between a review and agents that have contributed to the overall review as sub-reviwers."@en ;
+    rdfs:domain fr:ReviewVersion ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:range foaf:Agent ;
+    vs:term_status reg:statusStable .
+

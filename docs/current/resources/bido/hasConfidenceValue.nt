@@ -1,0 +1,6 @@
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ReviewerConfidenceValue> .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The confidence value of expertise in the review topic given by the reviewer."@en .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#label> "has confidence value"@en .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
