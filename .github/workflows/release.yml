@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   docs:
-    uses: ./.github/workflows/lode.yml
+    uses: SPAROntologies/sparontologies.github.io/.github/workflows/lode.yml@master
     with:
       ontology: docs/current/fr.ttl
 
@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: master
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
