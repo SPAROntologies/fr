@@ -5,8 +5,8 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/ScholarlyVenueManagementSystem">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">scholarly venue management system</rdfs:label>
     <rdfs:comment xml:lang="en">A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues.</rdfs:comment>
+    <rdfs:label xml:lang="en">scholarly venue management system</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

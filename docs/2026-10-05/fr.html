@@ -229,8 +229,8 @@ What is the full review version of a review, including its textual content and l
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_3b1fed4016ea3410e7b39f0cf0331513_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)."@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_3b1fed4016ea3410e7b39f0cf0331513_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)."@en &lt;http://purl.org/spar/fr> .
+&lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://www.w3.org/2000/01/rdf-schema#label> "agent"@en &lt;http://purl.org/spar/fr> .
 &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://xmlns.com/foaf/0.1/> &lt;http://purl.org/spar/fr> .
 
@@ -246,11 +246,11 @@ What is the full review version of a review, including its textual content and l
         rdfs:label "agent identifier"@en ;
         rdfs:comment "An identifier that uniquely identities an individual agent."@en ;
         rdfs:isDefinedBy datacite: ;
-        rdfs:subClassOf _:nc001a537b488402f9048a6db3c0dfea8b9,
+        rdfs:subClassOf _:n9c657879f3764d7ab23fbcd28e5e18c1b9,
             datacite:Identifier ;
         owl:disjointWith datacite:ResourceIdentifier .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b9 a owl:Restriction ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b9 a owl:Restriction ;
         owl:allValuesFrom datacite:AgentIdentifier ;
         owl:onProperty datacite:usesIdentifierScheme .
 }
@@ -282,10 +282,10 @@ What is the full review version of a review, including its textual content and l
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b9"
+            "@id": "http://purl.org/spar/datacite/Identifier"
           },
           {
-            "@id": "http://purl.org/spar/datacite/Identifier"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b9"
           }
         ],
         "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -295,7 +295,7 @@ What is the full review version of a review, including its textual content and l
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b9",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b9",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -315,14 +315,14 @@ What is the full review version of a review, including its textual content and l
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_8726ae390fa4dac9e906457896ac1d55_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#label> "agent identifier"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2002/07/owl#disjointWith> &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/Identifier> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an individual agent."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b9 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b9 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/Identifier> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an individual agent."@en &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b9 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b9 &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_0f13f228928c1f69baf23a2282e84332_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>agent identifier scheme</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/AgentIdentifierScheme <a title="Go to resource documentation" class=ms-2 href=resources/datacite/AgentIdentifierScheme.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The identifier scheme used to identify an agent.">The identifier scheme used to identify an agent.
@@ -336,14 +336,14 @@ _:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/2002/07/owl#allValue
         rdfs:label "agent identifier scheme"@en ;
         rdfs:comment "The identifier scheme used to identify an agent."@en ;
         rdfs:isDefinedBy datacite: ;
-        rdfs:subClassOf _:nc001a537b488402f9048a6db3c0dfea8b1,
+        rdfs:subClassOf _:n9c657879f3764d7ab23fbcd28e5e18c1b1,
             datacite:IdentifierScheme .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b1 a owl:Restriction ;
-        owl:onProperty _:nc001a537b488402f9048a6db3c0dfea8b2 ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b1 a owl:Restriction ;
+        owl:onProperty _:n9c657879f3764d7ab23fbcd28e5e18c1b2 ;
         owl:someValuesFrom datacite:AgentIdentifier .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b2 owl:inverseOf datacite:usesIdentifierScheme .
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b2 owl:inverseOf datacite:usesIdentifierScheme .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_0f13f228928c1f69baf23a2282e84332_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
@@ -373,7 +373,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/2002/07/owl#allValue
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b1"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b1"
           },
           {
             "@id": "http://purl.org/spar/datacite/IdentifierScheme"
@@ -381,13 +381,13 @@ _:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/2002/07/owl#allValue
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b1",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b1",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b2"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b2"
           }
         ],
         "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -397,7 +397,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/2002/07/owl#allValue
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b2",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b2",
         "http://www.w3.org/2002/07/owl#inverseOf": [
           {
             "@id": "http://purl.org/spar/datacite/usesIdentifierScheme"
@@ -407,16 +407,16 @@ _:nc001a537b488402f9048a6db3c0dfea8b9 &lt;http://www.w3.org/2002/07/owl#allValue
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_0f13f228928c1f69baf23a2282e84332_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "agent identifier scheme"@en &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b2 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify an agent."@en &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b2 &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_0f13f228928c1f69baf23a2282e84332_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n9c657879f3764d7ab23fbcd28e5e18c1b1 &lt;http://www.w3.org/2002/07/owl#onProperty> _:n9c657879f3764d7ab23fbcd28e5e18c1b2 &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b1 &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "agent identifier scheme"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify an agent."@en &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b1 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b2 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_87921ea572fbf54b366c3ff584c72af8_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>categorial bibliometric data</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/CategorialBibliometricData <a title="Go to resource documentation" class=ms-2 href=resources/bido/CategorialBibliometricData.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="Categorical information that characterises publication-related entities from a bibliometric point of view.">Categorical information that characterises publication-related entities from a bibliometric point of view.
@@ -461,8 +461,8 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_87921ea572fbf54b366c3ff584c72af8_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://www.w3.org/2000/01/rdf-schema#label> "categorial bibliometric data"@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_87921ea572fbf54b366c3ff584c72af8_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://www.w3.org/2000/01/rdf-schema#label> "categorial bibliometric data"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Categorical information that characterises publication-related entities from a bibliometric point of view."@en &lt;http://purl.org/spar/fr> .
 
@@ -515,11 +515,11 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_a6e91b47f6cfb26cf848f5dc7fd5aa8d_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Expression> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program."@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_a6e91b47f6cfb26cf848f5dc7fd5aa8d_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Expression> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/2000/01/rdf-schema#label> "comment"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Comment> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_f99a20218692890f73e3f9990c1fc4f0_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>concept scheme</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.w3.org/2008/05/skos#ConceptScheme <a title="Go to resource documentation" class=ms-2 href=resources/skos1/ConceptScheme.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.">A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.
@@ -564,10 +564,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_f99a20218692890f73e3f9990c1fc4f0_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "concept scheme"@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_f99a20218692890f73e3f9990c1fc4f0_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.w3.org/2008/05/skos#> &lt;http://purl.org/spar/fr> .
+&lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."@en &lt;http://purl.org/spar/fr> .
-&lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.w3.org/2008/05/skos#> &lt;http://purl.org/spar/fr> .
+&lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "concept scheme"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_af95193c1b78abe88498bce569008f66_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>convening organization</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/ConveningOrganization <a title="Go to resource documentation" class=ms-2 href=resources/fr/ConveningOrganization.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions.">A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions.
@@ -656,13 +656,13 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_af95193c1b78abe88498bce569008f66_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2000/01/rdf-schema#label> "convening organization"@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_af95193c1b78abe88498bce569008f66_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2000/01/rdf-schema#label> "convening organization"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_826b8d27b1266c4367ecfe9784c24c07_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>discrete review rating scale</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/DiscreteReviewRatingScale <a title="Go to resource documentation" class=ms-2 href=resources/bido/DiscreteReviewRatingScale.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A discrete scale defining the rating given by a reviewer for a specific scientific contribution.">A discrete scale defining the rating given by a reviewer for a specific scientific contribution.
@@ -713,11 +713,11 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_826b8d27b1266c4367ecfe9784c24c07_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_826b8d27b1266c4367ecfe9784c24c07_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the rating given by a reviewer for a specific scientific contribution."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#label> "discrete review rating scale"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/DiscreteReviewRatingScale> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_c6d969388e2252ffe318988fe1586e8b_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>discrete reviewer confidence scale</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/DiscreteReviewerConfidenceScale <a title="Go to resource documentation" class=ms-2 href=resources/bido/DiscreteReviewerConfidenceScale.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A discrete scale defining the confidence of a reviewer for a given topic.">A discrete scale defining the confidence of a reviewer for a given topic.
@@ -768,11 +768,11 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_c6d969388e2252ffe318988fe1586e8b_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#label> "discrete reviewer confidence scale"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the confidence of a reviewer for a given topic."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_c6d969388e2252ffe318988fe1586e8b_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the confidence of a reviewer for a given topic."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#label> "discrete reviewer confidence scale"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_c39b0483ad4baabfbf60ee1dc886f90f_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>endeavour</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#Endeavour <a title="Go to resource documentation" class=ms-2 href=resources/frbr/Endeavour.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The set of different aspects of user interests in the products of intellectual or artistic artifact.">The set of different aspects of user interests in the products of intellectual or artistic artifact.
@@ -817,10 +817,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_c39b0483ad4baabfbf60ee1dc886f90f_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_c39b0483ad4baabfbf60ee1dc886f90f_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The set of different aspects of user interests in the products of intellectual or artistic artifact."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_3adfae5d2955ade34f4d7130507888df_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>expression</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fabio/Expression <a title="Go to resource documentation" class=ms-2 href=resources/fabio/Expression.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A subclass of FRBR Expression, restricted to expressions of `fabio:Work`.">A subclass of FRBR Expression, restricted to expressions of `fabio:Work`.
@@ -872,10 +872,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b1 &lt;http://www.w3.org/2002/07/owl#someValu
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_3adfae5d2955ade34f4d7130507888df_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_3adfae5d2955ade34f4d7130507888df_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#label> "expression"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fabio/Expression> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_bb2b63df5367f3632dad1cf8d66b98c4_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>expression</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#Expression <a title="Go to resource documentation" class=ms-2 href=resources/frbr/Expression.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -936,10 +936,10 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_bb2b63df5367f3632dad1cf8d66b98c4_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_bb2b63df5367f3632dad1cf8d66b98c4_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#label> "expression"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nThe intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.\n\nAn expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. \nExpression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.\n        "@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_95c00027594a9f73219369313ac7d7d1_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>identifier</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/Identifier <a title="Go to resource documentation" class=ms-2 href=resources/datacite/Identifier.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An identifier that uniquely identities an entity, such as a funding agency, a person or a resource.">An identifier that uniquely identities an entity, such as a funding agency, a person or a resource.
@@ -955,20 +955,20 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
         rdfs:label "identifier"@en ;
         rdfs:comment "An identifier that uniquely identities an entity, such as a funding agency, a person or a resource."@en ;
         rdfs:isDefinedBy datacite: ;
-        rdfs:subClassOf _:nc001a537b488402f9048a6db3c0dfea8b10,
-            _:nc001a537b488402f9048a6db3c0dfea8b11,
+        rdfs:subClassOf _:n9c657879f3764d7ab23fbcd28e5e18c1b10,
+            _:n9c657879f3764d7ab23fbcd28e5e18c1b11,
             literal:Literal .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b10 a owl:Restriction ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b10 a owl:Restriction ;
         owl:onClass datacite:IdentifierScheme ;
         owl:onProperty datacite:usesIdentifierScheme ;
         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b11 a owl:Restriction ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b11 a owl:Restriction ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
-        owl:onProperty _:nc001a537b488402f9048a6db3c0dfea8b12 .
+        owl:onProperty _:n9c657879f3764d7ab23fbcd28e5e18c1b12 .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b12 owl:inverseOf datacite:hasIdentifier .
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b12 owl:inverseOf datacite:hasIdentifier .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_95c00027594a9f73219369313ac7d7d1_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
@@ -1001,15 +1001,40 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
             "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
           },
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b10"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b11"
           },
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b11"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b10"
           }
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b10",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b11",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#cardinality": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@value": "1"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b12"
+          }
+        ]
+      },
+      {
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b12",
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+          {
+            "@id": "http://purl.org/spar/datacite/hasIdentifier"
+          }
+        ]
+      },
+      {
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b10",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -1029,50 +1054,25 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
             "@value": "1"
           }
         ]
-      },
-      {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b11",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#cardinality": [
-          {
-            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-            "@value": "1"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b12"
-          }
-        ]
-      },
-      {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b12",
-        "http://www.w3.org/2002/07/owl#inverseOf": [
-          {
-            "@id": "http://purl.org/spar/datacite/hasIdentifier"
-          }
-        ]
       }
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_95c00027594a9f73219369313ac7d7d1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b12 &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an entity, such as a funding agency, a person or a resource."@en &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b10 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/2002/07/owl#cardinality> "1"^^&lt;http://www.w3.org/2001/XMLSchema#nonNegativeInteger> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b12 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b10 &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_95c00027594a9f73219369313ac7d7d1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n9c657879f3764d7ab23fbcd28e5e18c1b10 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b10 &lt;http://www.w3.org/2002/07/owl#onClass> &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b10 &lt;http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^&lt;http://www.w3.org/2001/XMLSchema#nonNegativeInteger> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an entity, such as a funding agency, a person or a resource."@en &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b11 &lt;http://www.w3.org/2002/07/owl#onProperty> _:n9c657879f3764d7ab23fbcd28e5e18c1b12 &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b11 &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b10 &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b12 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b11 &lt;http://www.w3.org/2002/07/owl#cardinality> "1"^^&lt;http://www.w3.org/2001/XMLSchema#nonNegativeInteger> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b10 &lt;http://www.w3.org/2002/07/owl#onClass> &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/Identifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b10 &lt;http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^&lt;http://www.w3.org/2001/XMLSchema#nonNegativeInteger> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_2b4bf2d4ee1d9e84d0d2d494b205c38c_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>identifier scheme</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/IdentifierScheme <a title="Go to resource documentation" class=ms-2 href=resources/datacite/IdentifierScheme.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The identifier scheme used to identify an entity such as a funding agency, a person or a resource.">The identifier scheme used to identify an entity such as a funding agency, a person or a resource.
@@ -1117,10 +1117,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-synt
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_2b4bf2d4ee1d9e84d0d2d494b205c38c_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "identifier scheme"@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_2b4bf2d4ee1d9e84d0d2d494b205c38c_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify an entity such as a funding agency, a person or a resource."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "identifier scheme"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_0960d026cb50d6c310a0195b707ff516_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>language</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://lexvo.org/ontology#Language <a title="Go to resource documentation" class=ms-2 href=resources/lvont/Language.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="Groups of human language variants that are or were spoken, written, or signed at some point in time.">Groups of human language variants that are or were spoken, written, or signed at some point in time.
@@ -1165,10 +1165,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-synt
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_0960d026cb50d6c310a0195b707ff516_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://lexvo.org/ontology#Language> &lt;http://www.w3.org/2000/01/rdf-schema#label> "language"@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_0960d026cb50d6c310a0195b707ff516_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://lexvo.org/ontology#Language> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://lexvo.org/ontology#> &lt;http://purl.org/spar/fr> .
 &lt;http://lexvo.org/ontology#Language> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Groups of human language variants that are or were spoken, written, or signed at some point in time."@en &lt;http://purl.org/spar/fr> .
-&lt;http://lexvo.org/ontology#Language> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://lexvo.org/ontology#> &lt;http://purl.org/spar/fr> .
 &lt;http://lexvo.org/ontology#Language> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://lexvo.org/ontology#Language> &lt;http://www.w3.org/2000/01/rdf-schema#label> "language"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_50097a5d0b1971d22d7a0304a297d474_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>literal</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.essepuntato.it/2010/06/literalreification/Literal <a title="Go to resource documentation" class=ms-2 href=resources/literal/Literal.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A reified literal.">A reified literal.
@@ -1213,10 +1213,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-synt
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_50097a5d0b1971d22d7a0304a297d474_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_50097a5d0b1971d22d7a0304a297d474_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A reified literal."@en &lt;http://purl.org/spar/fr> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#label> "literal"@en &lt;http://purl.org/spar/fr> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/fr> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A reified literal."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_a5995e5071dff9f08b1fd454f6382ed4_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>personal identifier</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/PersonalIdentifier <a title="Go to resource documentation" class=ms-2 href=resources/datacite/PersonalIdentifier.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An identifier that uniquely identifies an individual person.">An identifier that uniquely identifies an individual person.
@@ -1230,10 +1230,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-synt
         rdfs:label "personal identifier"@en ;
         rdfs:comment "An identifier that uniquely identifies an individual person."@en ;
         rdfs:isDefinedBy datacite: ;
-        rdfs:subClassOf _:nc001a537b488402f9048a6db3c0dfea8b3,
+        rdfs:subClassOf _:n9c657879f3764d7ab23fbcd28e5e18c1b3,
             datacite:AgentIdentifier .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b3 a owl:Restriction ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b3 a owl:Restriction ;
         owl:allValuesFrom datacite:PersonalIdentifierScheme ;
         owl:onProperty datacite:usesIdentifierScheme .
 }
@@ -1265,7 +1265,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-synt
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b3"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b3"
           },
           {
             "@id": "http://purl.org/spar/datacite/AgentIdentifier"
@@ -1273,7 +1273,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-synt
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b3",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b3",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -1291,15 +1291,15 @@ _:nc001a537b488402f9048a6db3c0dfea8b11 &lt;http://www.w3.org/1999/02/22-rdf-synt
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_a5995e5071dff9f08b1fd454f6382ed4_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identifies an individual person."@en &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_a5995e5071dff9f08b1fd454f6382ed4_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n9c657879f3764d7ab23fbcd28e5e18c1b3 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b3 &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#label> "personal identifier"@en &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identifies an individual person."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/AgentIdentifier> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b3 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_0f731fa2ea395387e4b6f81d881226bc_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>personal identifier scheme</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/PersonalIdentifierScheme <a title="Go to resource documentation" class=ms-2 href=resources/datacite/PersonalIdentifierScheme.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The identifier scheme used to identify a person.">The identifier scheme used to identify a person.
@@ -1313,14 +1313,14 @@ _:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/2002/07/owl#onProper
         rdfs:label "personal identifier scheme"@en ;
         rdfs:comment "The identifier scheme used to identify a person."@en ;
         rdfs:isDefinedBy datacite: ;
-        rdfs:subClassOf _:nc001a537b488402f9048a6db3c0dfea8b4,
+        rdfs:subClassOf _:n9c657879f3764d7ab23fbcd28e5e18c1b4,
             datacite:AgentIdentifierScheme .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b4 a owl:Restriction ;
-        owl:onProperty _:nc001a537b488402f9048a6db3c0dfea8b5 ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b4 a owl:Restriction ;
+        owl:onProperty _:n9c657879f3764d7ab23fbcd28e5e18c1b5 ;
         owl:someValuesFrom datacite:PersonalIdentifier .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b5 owl:inverseOf datacite:usesIdentifierScheme .
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b5 owl:inverseOf datacite:usesIdentifierScheme .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_0f731fa2ea395387e4b6f81d881226bc_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
@@ -1350,7 +1350,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/2002/07/owl#onProper
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b4"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b4"
           },
           {
             "@id": "http://purl.org/spar/datacite/AgentIdentifierScheme"
@@ -1358,13 +1358,13 @@ _:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/2002/07/owl#onProper
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b4",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b4",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b5"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b5"
           }
         ],
         "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -1374,7 +1374,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/2002/07/owl#onProper
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b5",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b5",
         "http://www.w3.org/2002/07/owl#inverseOf": [
           {
             "@id": "http://purl.org/spar/datacite/usesIdentifierScheme"
@@ -1384,16 +1384,16 @@ _:nc001a537b488402f9048a6db3c0dfea8b3 &lt;http://www.w3.org/2002/07/owl#onProper
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_0f731fa2ea395387e4b6f81d881226bc_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b4 &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b4 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify a person."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b4 &lt;http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b5 &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b5 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_0f731fa2ea395387e4b6f81d881226bc_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n9c657879f3764d7ab23fbcd28e5e18c1b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "personal identifier scheme"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b4 &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/AgentIdentifierScheme> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b4 &lt;http://www.w3.org/2002/07/owl#onProperty> _:n9c657879f3764d7ab23fbcd28e5e18c1b5 &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b5 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify a person."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/PersonalIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b4 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/datacite/PersonalIdentifier> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_6243a8aa878de14e742ec1dd54e17713_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>policy</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.w3.org/ns/odrl/2/Policy <a title="Go to resource documentation" class=ms-2 href=resources/odrl/Policy.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A non-empty group of permissions and/or prohibitions.">A non-empty group of permissions and/or prohibitions.
@@ -1439,9 +1439,9 @@ _:nc001a537b488402f9048a6db3c0dfea8b5 &lt;http://www.w3.org/2002/07/owl#inverseO
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_6243a8aa878de14e742ec1dd54e17713_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.w3.org/ns/odrl/2/Policy> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A non-empty group of permissions and/or prohibitions."@en &lt;http://purl.org/spar/fr> .
-&lt;http://www.w3.org/ns/odrl/2/Policy> &lt;http://www.w3.org/2000/01/rdf-schema#label> "policy"@en &lt;http://purl.org/spar/fr> .
-&lt;http://www.w3.org/ns/odrl/2/Policy> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://www.w3.org/ns/odrl/2/Policy> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.w3.org/ns/odrl/2/> &lt;http://purl.org/spar/fr> .
+&lt;http://www.w3.org/ns/odrl/2/Policy> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://www.w3.org/ns/odrl/2/Policy> &lt;http://www.w3.org/2000/01/rdf-schema#label> "policy"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_512c2fc3536df0540815a94465376bf4_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>resource identifier</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/ResourceIdentifier <a title="Go to resource documentation" class=ms-2 href=resources/datacite/ResourceIdentifier.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An identifier that is used to uniquely identify a resource.">An identifier that is used to uniquely identify a resource.
@@ -1455,10 +1455,10 @@ _:nc001a537b488402f9048a6db3c0dfea8b5 &lt;http://www.w3.org/2002/07/owl#inverseO
         rdfs:label "resource identifier"@en ;
         rdfs:comment "An identifier that is used to uniquely identify a resource."@en ;
         rdfs:isDefinedBy datacite: ;
-        rdfs:subClassOf _:nc001a537b488402f9048a6db3c0dfea8b8,
+        rdfs:subClassOf _:n9c657879f3764d7ab23fbcd28e5e18c1b8,
             datacite:Identifier .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b8 a owl:Restriction ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b8 a owl:Restriction ;
         owl:allValuesFrom datacite:ResourceIdentifierScheme ;
         owl:onProperty datacite:usesIdentifierScheme .
 }
@@ -1490,7 +1490,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b5 &lt;http://www.w3.org/2002/07/owl#inverseO
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b8"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b8"
           },
           {
             "@id": "http://purl.org/spar/datacite/Identifier"
@@ -1498,7 +1498,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b5 &lt;http://www.w3.org/2002/07/owl#inverseO
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b8",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b8",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -1516,15 +1516,15 @@ _:nc001a537b488402f9048a6db3c0dfea8b5 &lt;http://www.w3.org/2002/07/owl#inverseO
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_512c2fc3536df0540815a94465376bf4_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_512c2fc3536df0540815a94465376bf4_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b8 &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/Identifier> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b8 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b8 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#label> "resource identifier"@en &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b8 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that is used to uniquely identify a resource."@en &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_fd5ba7a7b09c17c36a99156e6b9dc480_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>resource identifier scheme</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/ResourceIdentifierScheme <a title="Go to resource documentation" class=ms-2 href=resources/datacite/ResourceIdentifierScheme.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The identifier scheme used to identify a resource.">The identifier scheme used to identify a resource.
@@ -1538,14 +1538,14 @@ _:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://www.w3.org/1999/02/22-rdf-synta
         rdfs:label "resource identifier scheme"@en ;
         rdfs:comment "The identifier scheme used to identify a resource."@en ;
         rdfs:isDefinedBy datacite: ;
-        rdfs:subClassOf _:nc001a537b488402f9048a6db3c0dfea8b6,
+        rdfs:subClassOf _:n9c657879f3764d7ab23fbcd28e5e18c1b6,
             datacite:IdentifierScheme .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b6 a owl:Restriction ;
-        owl:onProperty _:nc001a537b488402f9048a6db3c0dfea8b7 ;
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b6 a owl:Restriction ;
+        owl:onProperty _:n9c657879f3764d7ab23fbcd28e5e18c1b7 ;
         owl:someValuesFrom datacite:ResourceIdentifier .
 
-    _:nc001a537b488402f9048a6db3c0dfea8b7 owl:inverseOf datacite:usesIdentifierScheme .
+    _:n9c657879f3764d7ab23fbcd28e5e18c1b7 owl:inverseOf datacite:usesIdentifierScheme .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_fd5ba7a7b09c17c36a99156e6b9dc480_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
@@ -1575,21 +1575,21 @@ _:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://www.w3.org/1999/02/22-rdf-synta
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b6"
+            "@id": "http://purl.org/spar/datacite/IdentifierScheme"
           },
           {
-            "@id": "http://purl.org/spar/datacite/IdentifierScheme"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b6"
           }
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b6",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b6",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
           {
-            "@id": "_:nc001a537b488402f9048a6db3c0dfea8b7"
+            "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b7"
           }
         ],
         "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -1599,7 +1599,7 @@ _:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://www.w3.org/1999/02/22-rdf-synta
         ]
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b7",
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b7",
         "http://www.w3.org/2002/07/owl#inverseOf": [
           {
             "@id": "http://purl.org/spar/datacite/usesIdentifierScheme"
@@ -1609,16 +1609,16 @@ _:nc001a537b488402f9048a6db3c0dfea8b8 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_fd5ba7a7b09c17c36a99156e6b9dc480_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b7 &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b7 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_fd5ba7a7b09c17c36a99156e6b9dc480_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n9c657879f3764d7ab23fbcd28e5e18c1b7 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b6 &lt;http://www.w3.org/2002/07/owl#onProperty> _:n9c657879f3764d7ab23fbcd28e5e18c1b7 &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify a resource."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://purl.org/spar/fr> .
-_:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "resource identifier scheme"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://purl.org/spar/fr> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b6 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/datacite/ResourceIdentifier> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/ResourceIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b6 &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_2c70db16f45c959ce6891ffbb3cdd118_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>review</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fabio/Review <a title="Go to resource documentation" class=ms-2 href=resources/fabio/Review.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A review of others&#39; work.">A review of others&#39; work.
@@ -1670,9 +1670,9 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_2c70db16f45c959ce6891ffbb3cdd118_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/Review> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Review> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A review of others' work."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Review> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Work> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fabio/Review> &lt;http://www.w3.org/2000/01/rdf-schema#label> "review"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Review> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Work> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Review> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A review of others' work."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fabio/Review> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_1fd9387287ce621a719124afac6ec3f5_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>review rating concept</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/ReviewRatingValue <a title="Go to resource documentation" class=ms-2 href=resources/bido/ReviewRatingValue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -1724,11 +1724,11 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_1fd9387287ce621a719124afac6ec3f5_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "review rating concept"@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_1fd9387287ce621a719124afac6ec3f5_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given rating scale."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "review rating concept"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_abae4decfe533326b5e1154cf87656b2_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>review rating scale</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/ReviewRatingScale <a title="Go to resource documentation" class=ms-2 href=resources/bido/ReviewRatingScale.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A scale defining the rating given by a reviewer for a specific scientific contribution.">A scale defining the rating given by a reviewer for a specific scientific contribution.
@@ -1780,11 +1780,11 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_abae4decfe533326b5e1154cf87656b2_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_abae4decfe533326b5e1154cf87656b2_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the rating given by a reviewer for a specific scientific contribution."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#label> "review rating scale"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewRatingScale> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the rating given by a reviewer for a specific scientific contribution."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_8422805a099bb15721f4ff380bb6e7ab_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>review version</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/ReviewVersion <a title="Go to resource documentation" class=ms-2 href=resources/fr/ReviewVersion.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A version of a given review, defining its content and rating, which may vary over the time.">A version of a given review, defining its content and rating, which may vary over the time.
@@ -1882,13 +1882,13 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_8422805a099bb15721f4ff380bb6e7ab_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#label> "review version"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A version of a given review, defining its content and rating, which may vary over the time."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Comment> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_8422805a099bb15721f4ff380bb6e7ab_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#label> "review version"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version .\n\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;\n		fr:hasSubReviewer :my-person ;\n		fr:releasedBy :my-conference .\n    " &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/fabio/Comment> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A version of a given review, defining its content and rating, which may vary over the time."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_008f64e833c3d0f9e3929ecd44a54f9a_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>reviewer confidence scale</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/ReviewerConfidenceScale <a title="Go to resource documentation" class=ms-2 href=resources/bido/ReviewerConfidenceScale.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A scale defining the confidence of a reviewer for a given topic.">A scale defining the confidence of a reviewer for a given topic.
@@ -1940,11 +1940,11 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_008f64e833c3d0f9e3929ecd44a54f9a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the confidence of a reviewer for a given topic."@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_008f64e833c3d0f9e3929ecd44a54f9a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the confidence of a reviewer for a given topic."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence scale"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewerConfidenceScale> &lt;http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence scale"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_3fe32da717f97f035e244571d4be5737_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>reviewer confidence value</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/ReviewerConfidenceValue <a title="Go to resource documentation" class=ms-2 href=resources/bido/ReviewerConfidenceValue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The set of values of a given confidence scale.">The set of values of a given confidence scale.
@@ -1989,9 +1989,9 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_3fe32da717f97f035e244571d4be5737_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_3fe32da717f97f035e244571d4be5737_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence value"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence value"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given confidence scale."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_9265751cfcdca1bc5c6c5a73ca43c105_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>scholarly venue management system</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/ScholarlyVenueManagementSystem <a title="Go to resource documentation" class=ms-2 href=resources/bido/ScholarlyVenueManagementSystem.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -2038,9 +2038,9 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_9265751cfcdca1bc5c6c5a73ca43c105_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://www.w3.org/2000/01/rdf-schema#label> "scholarly venue management system"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://www.w3.org/2000/01/rdf-schema#label> "scholarly venue management system"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_2e3123c28f18c6fa08fe666e3ed26e7a_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>tracking system</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/TrackingSystem <a title="Go to resource documentation" class=ms-2 href=resources/fr/TrackingSystem.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The platform where the review process takes place.">The platform where the review process takes place.
@@ -2129,13 +2129,13 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_2e3123c28f18c6fa08fe666e3ed26e7a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2000/01/rdf-schema#label> "tracking system"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_2e3123c28f18c6fa08fe666e3ed26e7a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/bido/ScholarlyVenueManagementSystem> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The platform where the review process takes place."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2000/01/rdf-schema#label> "tracking system"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedAt :my-tracking-system .\n\n	:my-tracking-system a fr:TrackingSystem .\n    " &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_522a0a142b07ff01a3f1d71d4a212905_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>work</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fabio/Work <a title="Go to resource documentation" class=ms-2 href=resources/fabio/Work.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references.">A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references.
@@ -2187,11 +2187,11 @@ _:nc001a537b488402f9048a6db3c0dfea8b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_522a0a142b07ff01a3f1d71d4a212905_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/2000/01/rdf-schema#label> "work"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references."@en &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_522a0a142b07ff01a3f1d71d4a212905_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/Work> &lt;http://www.w3.org/2000/01/rdf-schema#label> "work"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_e1b4192da98236eece2984d36e94aba8_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>work</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#Work <a title="Go to resource documentation" class=ms-2 href=resources/frbr/Work.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="
@@ -2249,9 +2249,9 @@ A work is an abstract entity; there is no single material object one can point t
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_e1b4192da98236eece2984d36e94aba8_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nA distinct intellectual or artistic creation.\n\nA work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.\n        "@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#label> "work"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#label> "work"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=relations><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Object Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">15</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_abcbc6c65cb325168fe715e373960e7c_Relation> has creator </a><a href=#id_4a11671868cdcd9cd016a52309eb9f1f_Relation> has identifier </a><a href=#id_d105e7f7ceff3bf16cdbfa183899eb58_Relation> has language </a><a href=#id_3494e2ce7122eeac1b765ba1aa7e89f7_Relation> has license </a><a href=#id_f3c692c478a74d8326aa8b1b5b3704ba_Relation> has rating </a><a href=#id_6bb54238577a56d525e2de8d030096d3_Relation> has realization </a><a href=#id_db22bbf2161f5833595a5bb6de60ed8b_Relation> has reviewer confidence </a><a href=#id_6ab82b759cc8151841af4ffa8ba6799f_Relation> has sub-reviewer </a><a href=#id_18b520ff6ef1a9b6f32c69be938c5fbd_Relation> is defined in ranking </a><a href=#id_603516fa3c326ed0191ce9864be78bf5_Relation> issued at </a><a href=#id_34b9c0cbc3a7322681081682226d5a56_Relation> issued for </a><a href=#id_9a96c213c6c7392ceab7d37cebccd92e_Relation> released by </a><a href=#id_40666bf72147d487e71ad155ec568ea8_Relation> replies to </a><a href=#id_30479f6e8ce645a2873c0cfaba26caa1_Relation> reviews </a><a href=#id_0cf6d794a11288988947f65b6f721b0a_Relation> uses identifier scheme </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_abcbc6c65cb325168fe715e373960e7c_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has creator</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/dc/terms/creator <a title="Go to resource documentation" class=ms-2 href=resources/dcterms/creator.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An entity responsible for making the resource.">An entity responsible for making the resource.
@@ -2302,11 +2302,11 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_abcbc6c65cb325168fe715e373960e7c_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_abcbc6c65cb325168fe715e373960e7c_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/dc/terms/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has creator" &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has creator" &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/creator> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_4a11671868cdcd9cd016a52309eb9f1f_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has identifier</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/datacite/hasIdentifier <a title="Go to resource documentation" class=ms-2 href=resources/datacite/hasIdentifier.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A unique identifier for the entity (either a funder, a person, a license or a resource).">A unique identifier for the entity (either a funder, a person, a license or a resource).
@@ -2359,12 +2359,12 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_4a11671868cdcd9cd016a52309eb9f1f_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#InverseFunctionalProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/datacite/Identifier> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_4a11671868cdcd9cd016a52309eb9f1f_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for the entity (either a funder, a person, a license or a resource)."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#InverseFunctionalProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/datacite/Identifier> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/hasIdentifier> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_d105e7f7ceff3bf16cdbfa183899eb58_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has language</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/dc/terms/language <a title="Go to resource documentation" class=ms-2 href=resources/dcterms/language.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A language of the resource.">A language of the resource.
@@ -2409,9 +2409,9 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_d105e7f7ceff3bf16cdbfa183899eb58_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/language> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_d105e7f7ceff3bf16cdbfa183899eb58_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/language> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/language> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/language> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/dc/terms/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/language> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/language> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has language"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_3494e2ce7122eeac1b765ba1aa7e89f7_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has license</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/dc/terms/license <a title="Go to resource documentation" class=ms-2 href=resources/dcterms/license.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -2457,10 +2457,10 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_3494e2ce7122eeac1b765ba1aa7e89f7_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/license> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_3494e2ce7122eeac1b765ba1aa7e89f7_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/license> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has license"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/license> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/dc/terms/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/license> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/license> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A legal document giving official permission to do something with the resource."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/license> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has license"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_f3c692c478a74d8326aa8b1b5b3704ba_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has rating</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/hasRating <a title="Go to resource documentation" class=ms-2 href=resources/fr/hasRating.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a review and a given rating assigned by a reviewer.">The relation between a review and a given rating assigned by a reviewer.
@@ -2552,13 +2552,13 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_f3c692c478a74d8326aa8b1b5b3704ba_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_f3c692c478a74d8326aa8b1b5b3704ba_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and a given rating assigned by a reviewer."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has rating"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and a given rating assigned by a reviewer."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasRating> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasRating> &lt;http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc .\n\n	bido:sa-sr-bl-wacc a bido:ReviewRatingValue .\n    " &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_6bb54238577a56d525e2de8d030096d3_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has realization</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#realization <a title="Go to resource documentation" class=ms-2 href=resources/frbr/realization.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -2616,11 +2616,11 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_6bb54238577a56d525e2de8d030096d3_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_6bb54238577a56d525e2de8d030096d3_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The expression that is a realization of a work."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_db22bbf2161f5833595a5bb6de60ed8b_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has reviewer confidence</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/hasReviewerConfidence <a title="Go to resource documentation" class=ms-2 href=resources/fr/hasReviewerConfidence.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -2712,14 +2712,14 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_db22bbf2161f5833595a5bb6de60ed8b_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 .\n\n	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .\n    " &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_db22bbf2161f5833595a5bb6de60ed8b_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has reviewer confidence"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution." &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has reviewer confidence"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 .\n\n	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .\n    " &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasReviewerConfidence> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_6ab82b759cc8151841af4ffa8ba6799f_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has sub-reviewer</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/hasSubReviewer <a title="Go to resource documentation" class=ms-2 href=resources/fr/hasSubReviewer.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a review and agents that have contributed to the overall review as sub-reviwers.">The relation between a review and agents that have contributed to the overall review as sub-reviwers.
@@ -2811,14 +2811,14 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_6ab82b759cc8151841af4ffa8ba6799f_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_6ab82b759cc8151841af4ffa8ba6799f_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and agents that have contributed to the overall review as sub-reviwers."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasSubReviewer :my-person .\n	\n	:my-person a foaf:Agent .\n    " &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and agents that have contributed to the overall review as sub-reviwers."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has sub-reviewer"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has sub-reviewer"@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/hasSubReviewer> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_18b520ff6ef1a9b6f32c69be938c5fbd_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>is defined in ranking</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/isDefinedIn <a title="Go to resource documentation" class=ms-2 href=resources/bido/isDefinedIn.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A relation between a ranking category and the ranking that defines it.">A relation between a ranking category and the ranking that defines it.
@@ -2877,11 +2877,11 @@ A work is an abstract entity; there is no single material object one can point t
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_18b520ff6ef1a9b6f32c69be938c5fbd_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2008/05/skos#ConceptScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is defined in ranking"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a ranking category and the ranking that defines it."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/bido/CategorialBibliometricData> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a ranking category and the ranking that defines it."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/isDefinedIn> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is defined in ranking"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_603516fa3c326ed0191ce9864be78bf5_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>issued at</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/issuedAt <a title="Go to resource documentation" class=ms-2 href=resources/fr/issuedAt.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a review and the tracking or scholarly venue management system where the reviewing process took place.">The relation between a review and the tracking or scholarly venue management system where the reviewing process took place.
@@ -2976,14 +2976,14 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_603516fa3c326ed0191ce9864be78bf5_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_603516fa3c326ed0191ce9864be78bf5_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fabio/Review> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedAt> &lt;http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedAt :my-tracking-system .\n\n	:my-tracking-system a fr:TrackingSystem .\n    " &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the tracking or scholarly venue management system where the reviewing process took place."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fabio/Review> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedAt> &lt;http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedAt :my-tracking-system .\n\n	:my-tracking-system a fr:TrackingSystem .\n    " &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2000/01/rdf-schema#label> "issued at"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/fr/TrackingSystem> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedAt> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_34b9c0cbc3a7322681081682226d5a56_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>issued for</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/issuedFor <a title="Go to resource documentation" class=ms-2 href=resources/fr/issuedFor.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review).">The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review).
@@ -3078,13 +3078,13 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_34b9c0cbc3a7322681081682226d5a56_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fabio/Review> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_34b9c0cbc3a7322681081682226d5a56_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/issuedFor> &lt;http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fabio/Review> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/fr/ConveningOrganization> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/issuedFor> &lt;http://www.w3.org/2000/01/rdf-schema#label> "issued for"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_9a96c213c6c7392ceab7d37cebccd92e_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>released by</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fr/releasedBy <a title="Go to resource documentation" class=ms-2 href=resources/fr/releasedBy.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -3178,13 +3178,13 @@ A work is an abstract entity; there is no single material object one can point t
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_9a96c213c6c7392ceab7d37cebccd92e_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fr/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2000/01/rdf-schema#label> "released by"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fr/releasedBy> &lt;http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:releasedBy :my-conference .\n\n	:my-conference a foaf:Agent .\n    " &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://xmlns.com/foaf/0.1/Agent> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the agent publishing it. It might be the author of the review or conference or journal to which the scientific resource was submitted to."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/releasedBy> &lt;http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:releasedBy :my-conference .\n\n	:my-conference a foaf:Agent .\n    " &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/fr/ReviewVersion> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fr/releasedBy> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_40666bf72147d487e71ad155ec568ea8_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>replies to</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/cito/repliesTo <a title="Go to resource documentation" class=ms-2 href=resources/cito/repliesTo.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity.">A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity.
@@ -3229,10 +3229,10 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_40666bf72147d487e71ad155ec568ea8_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/cito/repliesTo> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/cito/> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_40666bf72147d487e71ad155ec568ea8_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/cito/repliesTo> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/cito/repliesTo> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/cito/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/cito/repliesTo> &lt;http://www.w3.org/2000/01/rdf-schema#label> "replies to"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/cito/repliesTo> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/cito/repliesTo> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_30479f6e8ce645a2873c0cfaba26caa1_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>reviews</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/cito/reviews <a title="Go to resource documentation" class=ms-2 href=resources/cito/reviews.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A relation according to which the citing entity reviews statements, ideas or conclusions presented in the cited entity.">A relation according to which the citing entity reviews statements, ideas or conclusions presented in the cited entity.
@@ -3338,11 +3338,11 @@ A work is an abstract entity; there is no single material object one can point t
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_0cf6d794a11288988947f65b6f721b0a_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to provide the identifier for an entity (either a funder, a person, a license or a resource)."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/datacite/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "uses identifier scheme"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/datacite/Identifier> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/datacite/IdentifierScheme> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/datacite/usesIdentifierScheme> &lt;http://www.w3.org/2000/01/rdf-schema#label> "uses identifier scheme"@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=attributes><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Data Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">7</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_17e023b00d37b4ef8cc910ea71589fc1_Attribute> has confidence value </a><a href=#id_d79b137bf42d1fa5cd82cc909bad765c_Attribute> has content </a><a href=#id_c86e1300081580fd7066f7bfd3f7fc11_Attribute> has date issued </a><a href=#id_3e2f60daa912b4bbfdda79d75fe2752b_Attribute> has date modified </a><a href=#id_7c92db6e44d50449d092e2b4df22147e_Attribute> has literal value </a><a href=#id_2f8b0e6210d9675ddeddb43c26db4868_Attribute> has rating value </a><a href=#id_23348fdc99b5798e624fe091e0b4709d_Attribute> has URL </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_17e023b00d37b4ef8cc910ea71589fc1_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has confidence value</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/hasConfidenceValue <a title="Go to resource documentation" class=ms-2 href=resources/bido/hasConfidenceValue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The confidence value of expertise in the review topic given by the reviewer.">The confidence value of expertise in the review topic given by the reviewer.
@@ -3400,11 +3400,11 @@ A work is an abstract entity; there is no single material object one can point t
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_17e023b00d37b4ef8cc910ea71589fc1_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/bido/ReviewerConfidenceValue> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The confidence value of expertise in the review topic given by the reviewer."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has confidence value"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/hasConfidenceValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The confidence value of expertise in the review topic given by the reviewer."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_d79b137bf42d1fa5cd82cc909bad765c_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has content</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/c4o/hasContent <a title="Go to resource documentation" class=ms-2 href=resources/c4o/hasContent.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The textual content of a particular FRBR expression.">The textual content of a particular FRBR expression.
@@ -3462,12 +3462,12 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_d79b137bf42d1fa5cd82cc909bad765c_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The textual content of a particular FRBR expression."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_d79b137bf42d1fa5cd82cc909bad765c_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has content"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/c4o/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has content"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/c4o/hasContent> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The textual content of a particular FRBR expression."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_c86e1300081580fd7066f7bfd3f7fc11_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has date issued</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/dc/terms/issued <a title="Go to resource documentation" class=ms-2 href=resources/dcterms/issued.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="Date of formal issuance of the resource.">Date of formal issuance of the resource.
@@ -3518,11 +3518,11 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_c86e1300081580fd7066f7bfd3f7fc11_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/dc/terms/> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_c86e1300081580fd7066f7bfd3f7fc11_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/dc/terms/> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has date issued"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance of the resource."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/issued> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_3e2f60daa912b4bbfdda79d75fe2752b_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has date modified</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/dc/terms/modified <a title="Go to resource documentation" class=ms-2 href=resources/dcterms/modified.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="Date on which the resource was changed.">Date on which the resource was changed.
@@ -3574,10 +3574,10 @@ A work is an abstract entity; there is no single material object one can point t
     "@id": "http://purl.org/spar/fr"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_3e2f60daa912b4bbfdda79d75fe2752b_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/dc/terms/modified> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has date modified"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/modified> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/modified> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Date on which the resource was changed."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/dc/terms/modified> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/modified> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/dc/terms/modified> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/dc/terms/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/dc/terms/modified> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_7c92db6e44d50449d092e2b4df22147e_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has literal value</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue <a title="Go to resource documentation" class=ms-2 href=resources/literal/hasLiteralValue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The value that a reified literal represents.">The value that a reified literal represents.
@@ -3602,8 +3602,8 @@ A work is an abstract entity; there is no single material object one can point t
       {
         "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
         "@type": [
-          "http://www.w3.org/2002/07/owl#FunctionalProperty",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+          "http://www.w3.org/2002/07/owl#DatatypeProperty",
+          "http://www.w3.org/2002/07/owl#FunctionalProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": [
           {
@@ -3636,13 +3636,13 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_7c92db6e44d50449d092e2b4df22147e_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has literal value"@en &lt;http://purl.org/spar/fr> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/fr> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The value that a reified literal represents."@en &lt;http://purl.org/spar/fr> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_7c92db6e44d50449d092e2b4df22147e_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#FunctionalProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/fr> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/fr> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has literal value"@en &lt;http://purl.org/spar/fr> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The value that a reified literal represents."@en &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_2f8b0e6210d9675ddeddb43c26db4868_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has rating value</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/bido/hasRatingValue <a title="Go to resource documentation" class=ms-2 href=resources/bido/hasRatingValue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The value of the rating given to a review.">The value of the rating given to a review.
@@ -3699,12 +3699,12 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_2f8b0e6210d9675ddeddb43c26db4868_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_2f8b0e6210d9675ddeddb43c26db4868_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has rating value"@en &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/bido/ReviewRatingValue> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has rating value"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The value of the rating given to a review."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/bido/hasRatingValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido/> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_23348fdc99b5798e624fe091e0b4709d_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has URL</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/fabio/hasURL <a title="Go to resource documentation" class=ms-2 href=resources/fabio/hasURL.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web.">An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web.
@@ -3763,12 +3763,12 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/fr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_23348fdc99b5798e624fe091e0b4709d_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web."@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2001/XMLSchema#anyURI> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/fr> .
+]</code></pre></div><div class="tab-pane fade" id=id_23348fdc99b5798e624fe091e0b4709d_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
 &lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has URL"@en &lt;http://purl.org/spar/fr> .
-&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/fabio/> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2001/XMLSchema#anyURI> &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web."@en &lt;http://purl.org/spar/fr> .
+&lt;http://purl.org/spar/fabio/hasURL> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/fr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=annotations><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Annotation Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">4</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation> creator </a><a href=#id_faeeb6444c2ed08c40ecc1880be289ca_Annotation> date </a><a href=#id_276ec96e149571f8a27f4417d7c6bc20_Annotation> language </a><a href=#id_cfac1f9e90cd24d60339c7abfecdb2f3_Annotation> rights </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_d8448f7de5238dcdf58a6a729dd44487_Annotation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>creator</div> <sup class="badge bg-light text-secondary ap" title="Annotation Property">ap</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#annotations>Annotation Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/dc/elements/1.1/creator <a title="Go to resource documentation" class=ms-2 href=resources/dc/creator.html><i class="bi bi-box-arrow-up-right"></i></a></div><div class="card-footer bg-white py-0"><div class="accordion accordion-flush prov-accordion" id=id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_acc><div class=accordion-item><h2 class="accordion-header d-flex justify-content-end" id=id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_head><button class="accordion-button collapsed py-1 px-2 small fw-bold text-uppercase text-primary w-auto" title="RDF provenance" aria-controls=id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov aria-expanded=false data-bs-target=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov data-bs-toggle=collapse type=button><span>RDF provenance</span> <i class="bi bi-code"></i></button></h2><div class="accordion-collapse collapse" aria-labelledby=id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_head data-bs-parent=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_acc id=id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov><div class="accordion-body p-2"><ul class="nav nav-tabs nav-tabs-sm justify-content-end small mb-0" role=tablist><li class=nav-item role=presentation><button class="nav-link active py-1 px-2" data-bs-target=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_1 data-bs-toggle=tab role=tab type=button>TriG</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_2 data-bs-toggle=tab role=tab type=button>JSON-LD</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_3 data-bs-toggle=tab role=tab type=button>N-Quads</button></ul><div class=tab-content><div class="tab-pane fade show active" id=id_d8448f7de5238dcdf58a6a729dd44487_Annotation_prov_1 role=tabpanel><pre class="mb-0 small"><code>@prefix dc: &lt;http://purl.org/dc/elements/1.1/> .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#> .

@@ -4,20 +4,20 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
-    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b4"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">The identifier scheme used to identify a person.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:label xml:lang="en">personal identifier scheme</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b4">
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifier"/>
+  <rdf:Description rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b4">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b5"/>
+    <owl:onProperty rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b5"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifier"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b5">
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
+    <rdfs:label xml:lang="en">personal identifier scheme</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b4"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
+    <rdfs:comment xml:lang="en">The identifier scheme used to identify a person.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b5">
     <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
   </rdf:Description>
 </rdf:RDF>

@@ -4,11 +4,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/datacite/hasIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/datacite/Identifier"/>
     <rdfs:comment xml:lang="en">A unique identifier for the entity (either a funder, a person, a license or a resource).</rdfs:comment>
     <rdfs:label xml:lang="en">has identifier</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/spar/datacite/Identifier"/>
   </rdf:Description>
 </rdf:RDF>

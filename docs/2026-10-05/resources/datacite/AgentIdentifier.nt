@@ -1,10 +1,10 @@
 <http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "agent identifier"@en .
 <http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/datacite/ResourceIdentifier> .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nc001a537b488402f9048a6db3c0dfea8b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:nc001a537b488402f9048a6db3c0dfea8b9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Identifier> .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b9 .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an individual agent."@en .
 <http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-_:nc001a537b488402f9048a6db3c0dfea8b9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/AgentIdentifier> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/AgentIdentifier> .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Identifier> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an individual agent."@en .
+_:n9c657879f3764d7ab23fbcd28e5e18c1b9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9c657879f3764d7ab23fbcd28e5e18c1b9 .

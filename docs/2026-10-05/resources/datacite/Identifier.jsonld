@@ -26,15 +26,40 @@
         "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b10"
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b11"
       },
       {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b11"
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b10"
       }
     ]
   },
   {
-    "@id": "_:nc001a537b488402f9048a6db3c0dfea8b10",
+    "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b12"
+      }
+    ]
+  },
+  {
+    "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b12",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/datacite/hasIdentifier"
+      }
+    ]
+  },
+  {
+    "@id": "_:n9c657879f3764d7ab23fbcd28e5e18c1b10",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -52,31 +77,6 @@
       {
         "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
         "@value": "1"
-      }
-    ]
-  },
-  {
-    "@id": "_:nc001a537b488402f9048a6db3c0dfea8b11",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b12"
-      }
-    ]
-  },
-  {
-    "@id": "_:nc001a537b488402f9048a6db3c0dfea8b12",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://purl.org/spar/datacite/hasIdentifier"
       }
     ]
   }

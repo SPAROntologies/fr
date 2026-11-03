@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy">
-    <rdfs:comment xml:lang="en">A non-empty group of permissions and/or prohibitions.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
     <rdfs:label xml:lang="en">policy</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <rdfs:comment xml:lang="en">A non-empty group of permissions and/or prohibitions.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

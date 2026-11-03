@@ -5,9 +5,9 @@
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
     <rdfs:label xml:lang="en">has date modified</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
 </rdf:RDF>
