@@ -5,10 +5,10 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/isDefinedIn">
     <rdfs:range rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    <rdfs:label xml:lang="en">is defined in ranking</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdfs:comment xml:lang="en">A relation between a ranking category and the ranking that defines it.</rdfs:comment>
     <rdfs:domain rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A relation between a ranking category and the ranking that defines it.</rdfs:comment>
+    <rdfs:label xml:lang="en">is defined in ranking</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

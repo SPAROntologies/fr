@@ -4,10 +4,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/ReviewRatingScale">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    <rdfs:comment xml:lang="en">A scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
     <rdfs:label xml:lang="en">review rating scale</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    <rdfs:comment xml:lang="en">A scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

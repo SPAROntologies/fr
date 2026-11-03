@@ -4,20 +4,20 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/AgentIdentifierScheme">
-    <rdfs:label xml:lang="en">agent identifier scheme</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b1"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
-    <rdfs:comment xml:lang="en">The identifier scheme used to identify an agent.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b2">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b1">
-    <owl:onProperty rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b2"/>
+  <rdf:Description rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b1">
+    <owl:onProperty rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b2"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/AgentIdentifierScheme">
+    <rdfs:subClassOf rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b1"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:label xml:lang="en">agent identifier scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">The identifier scheme used to identify an agent.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n9c657879f3764d7ab23fbcd28e5e18c1b2">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
   </rdf:Description>
 </rdf:RDF>

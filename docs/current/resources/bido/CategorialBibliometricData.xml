@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/CategorialBibliometricData">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdfs:label xml:lang="en">categorial bibliometric data</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">categorial bibliometric data</rdfs:label>
     <rdfs:comment xml:lang="en">Categorical information that characterises publication-related entities from a bibliometric point of view.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
   </rdf:Description>
 </rdf:RDF>
