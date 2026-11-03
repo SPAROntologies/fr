@@ -1,0 +1,10 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bido:ReviewRatingValue a owl:Class ;
+    rdfs:label "review rating concept"@en ;
+    rdfs:comment "The set of values of a given rating scale."@en ;
+    rdfs:isDefinedBy bido: ;
+    rdfs:subClassOf bido:CategorialBibliometricData .
+

@@ -1,0 +1,25 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:ReviewVersion a owl:Class ;
+    rdfs:label "review version"@en ;
+    vann:example """
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version .
+
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasRating bido:sa-sr-bl-wacc ;
+		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;
+		fr:hasSubReviewer :my-person ;
+		fr:releasedBy :my-conference .
+    """ ;
+    rdfs:comment "A version of a given review, defining its content and rating, which may vary over the time."@en ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:subClassOf fabio:Comment ;
+    vs:term_status reg:statusStable .
+

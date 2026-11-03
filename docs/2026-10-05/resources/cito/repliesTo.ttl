@@ -1,0 +1,9 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cito:repliesTo a owl:ObjectProperty ;
+    rdfs:label "replies to"@en ;
+    rdfs:comment "A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity."@en ;
+    rdfs:isDefinedBy cito: .
+

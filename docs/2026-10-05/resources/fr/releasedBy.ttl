@@ -1,0 +1,22 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:releasedBy a owl:ObjectProperty ;
+    rdfs:label "released by"@en ;
+    vann:example """
+	:my-review-version a fr:ReviewVersion ;
+		fr:releasedBy :my-conference .
+
+	:my-conference a foaf:Agent .
+    """ ;
+    rdfs:comment "The relation between a review and the agent publishing it. It might be the author of the review or conference or journal to which the scientific resource was submitted to."@en ;
+    rdfs:domain fr:ReviewVersion ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:range foaf:Agent ;
+    vs:term_status reg:statusStable .
+

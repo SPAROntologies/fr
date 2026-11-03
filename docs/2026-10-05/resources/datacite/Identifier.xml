@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/Identifier">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2010/06/literalreification/Literal"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b10"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b11"/>
+    <rdfs:label xml:lang="en">identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">An identifier that uniquely identities an entity, such as a funding agency, a person or a resource.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b11">
+    <owl:onProperty rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b12"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b10">
+    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onClass rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b12">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+  </rdf:Description>
+</rdf:RDF>
