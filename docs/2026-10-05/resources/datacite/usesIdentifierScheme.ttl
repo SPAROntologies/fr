@@ -1,0 +1,11 @@
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+datacite:usesIdentifierScheme a owl:ObjectProperty ;
+    rdfs:label "uses identifier scheme"@en ;
+    rdfs:comment "The identifier scheme used to provide the identifier for an entity (either a funder, a person, a license or a resource)."@en ;
+    rdfs:domain datacite:Identifier ;
+    rdfs:isDefinedBy datacite: ;
+    rdfs:range datacite:IdentifierScheme .
+

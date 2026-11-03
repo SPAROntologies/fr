@@ -1,0 +1,23 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:issuedAt a owl:ObjectProperty ;
+    rdfs:label "issued at"@en ;
+    vann:example """
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version ;
+		fr:issuedAt :my-tracking-system .
+
+	:my-tracking-system a fr:TrackingSystem .
+    """ ;
+    rdfs:comment "The relation between a review and the tracking or scholarly venue management system where the reviewing process took place."@en ;
+    rdfs:domain fabio:Review ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:range fr:TrackingSystem ;
+    vs:term_status reg:statusStable .
+

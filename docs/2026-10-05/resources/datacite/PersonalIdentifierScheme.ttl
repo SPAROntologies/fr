@@ -1,0 +1,13 @@
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+datacite:PersonalIdentifierScheme a owl:Class ;
+    rdfs:label "personal identifier scheme"@en ;
+    rdfs:comment "The identifier scheme used to identify a person."@en ;
+    rdfs:isDefinedBy datacite: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf datacite:usesIdentifierScheme ] ;
+            owl:someValuesFrom datacite:PersonalIdentifier ],
+        datacite:AgentIdentifierScheme .
+

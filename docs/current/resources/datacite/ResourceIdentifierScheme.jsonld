@@ -23,7 +23,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n9816a97a4adb4b7390cc043208e0097fb11"
+        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b6"
       },
       {
         "@id": "http://purl.org/spar/datacite/IdentifierScheme"
@@ -31,13 +31,13 @@
     ]
   },
   {
-    "@id": "_:n9816a97a4adb4b7390cc043208e0097fb11",
+    "@id": "_:nc001a537b488402f9048a6db3c0dfea8b6",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:n9816a97a4adb4b7390cc043208e0097fb12"
+        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b7"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "@id": "_:n9816a97a4adb4b7390cc043208e0097fb12",
+    "@id": "_:nc001a537b488402f9048a6db3c0dfea8b7",
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/datacite/usesIdentifierScheme"

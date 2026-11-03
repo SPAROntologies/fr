@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/ScholarlyVenueManagementSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "scholarly venue management system"
+      }
+    ]
+  }
+]
