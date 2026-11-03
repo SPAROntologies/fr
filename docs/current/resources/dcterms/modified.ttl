@@ -2,8 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-dcterms:modified a owl:AnnotationProperty,
-        owl:DatatypeProperty ;
+dcterms:modified a owl:DatatypeProperty ;
     rdfs:label "has date modified"@en ;
     rdfs:comment "Date on which the resource was changed."@en ;
     rdfs:isDefinedBy dcterms: ;

@@ -23,10 +23,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/datacite/Identifier"
+        "@id": "_:nc001a537b488402f9048a6db3c0dfea8b9"
       },
       {
-        "@id": "_:n9816a97a4adb4b7390cc043208e0097fb5"
+        "@id": "http://purl.org/spar/datacite/Identifier"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "@id": "_:n9816a97a4adb4b7390cc043208e0097fb5",
+    "@id": "_:nc001a537b488402f9048a6db3c0dfea8b9",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
