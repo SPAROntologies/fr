@@ -15,7 +15,7 @@ fr:issuedFor a owl:ObjectProperty ;
 
 	:my-convening-organization a fr:ConveningOrganization .
     """ ;
-    rdfs:comment "The realation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en ;
+    rdfs:comment "The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en ;
     rdfs:domain fabio:Review ;
     rdfs:isDefinedBy fr: ;
     rdfs:range fr:ConveningOrganization ;

@@ -1,0 +1,22 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fr: <http://purl.org/spar/fr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fr:ConveningOrganization a owl:Class ;
+    rdfs:label "convening organization"@en ;
+    vann:example """
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version ;
+		fr:issuedFor :my-convening-organization .
+
+	:my-convening-organization a fr:ConveningOrganization .
+    """ ;
+    rdfs:comment "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en ;
+    rdfs:isDefinedBy fr: ;
+    rdfs:subClassOf foaf:Agent ;
+    vs:term_status reg:statusStable .
+

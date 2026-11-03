@@ -1,366 +1,364 @@
-_:n9816a97a4adb4b7390cc043208e0097fb1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://purl.org/spar/fr> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.sparontologies.net/ontologies/fr> .
-<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ReviewerConfidenceScale> .
-_:n9816a97a4adb4b7390cc043208e0097fb9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/datacite/PersonalIdentifier> .
-<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given rating scale."@en .
-<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb9 .
-<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."@en .
-<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "resource identifier scheme"@en .
-<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#label> "work"@en .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the agent publishing it. It might be the author of the review or conference or journal to which the scientific resource was submitted to."@en .
-<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ScholarlyVenueManagementSystem> .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#label> "has URL"@en .
-<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "concept scheme"@en .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#label> "has language"@en .
-<http://purl.org/spar/fr> <http://www.w3.org/2000/01/rdf-schema#label> "FAIR Reviews Ontology (FR)"@en .
-<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal document giving official permission to do something with the resource."@en .
-<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#label> "review rating scale"@en .
-<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb4 .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 .\n\n	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .\n    " .
-_:n9816a97a4adb4b7390cc043208e0097fb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/datacite/Identifier> .
-<http://purl.org/spar/fr> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/spar/fr" .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-_:n9816a97a4adb4b7390cc043208e0097fb9 <http://www.w3.org/2002/07/owl#onProperty> _:n9816a97a4adb4b7390cc043208e0097fb10 .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb2 .
-<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence value"@en .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to provide the identifier for an entity (either a funder, a person, a license or a resource)."@en .
-<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "agent identifier"@en .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-empty group of permissions and/or prohibitions."@en .
-<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the rating given to a review."@en .
-<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is defined in ranking"@en .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identifies an individual person."@en .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web."@en .
-<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en .
-<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/CategorialBibliometricData> .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "personal identifier scheme"@en .
-<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/AgentIdentifier> .
-<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ReviewerConfidenceValue> .
-<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
-<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorical information that characterises publication-related entities from a bibliometric point of view."@en .
-<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the tracking or scholarly venue management system where the reviewing process took place."@en .
-<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
-<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#label> "issued at"@en .
-<http://purl.org/spar/fr> <http://purl.org/dc/terms/modified> "2026-08-14" .
-<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues."@en .
-<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#label> "issued for"@en .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "identifier scheme"@en .
-<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fr/ConveningOrganization> .
-<http://purl.org/spar/fr/issuedFor> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " .
-<http://purl.org/spar/fr> <https://schema.org/keywords> "scientometrics"@en .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n9816a97a4adb4b7390cc043208e0097fb11 <http://www.w3.org/2002/07/owl#onProperty> _:n9816a97a4adb4b7390cc043208e0097fb12 .
-<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-_:n9816a97a4adb4b7390cc043208e0097fb2 <http://www.w3.org/2002/07/owl#onProperty> _:n9816a97a4adb4b7390cc043208e0097fb3 .
-<http://purl.org/spar/fr> <https://schema.org/codeRepository> <https://github.com/SPAROntologies/fr> .
-<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://lexvo.org/ontology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n9816a97a4adb4b7390cc043208e0097fb7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/datacite/AgentIdentifier> .
-<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/date> "2026-08-14" .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#label> "has confidence value"@en .
-_:n9816a97a4adb4b7390cc043208e0097fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:n9816a97a4adb4b7390cc043208e0097fb10 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "has literal value"@en .
-<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify a resource."@en .
-<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator" .
-<http://purl.org/spar/fr> <http://purl.org/dc/terms/source> <https://github.com/SPAROntologies/fr/blob/master/docs/cq.md> .
-<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#priorVersion> <http://purl.org/spar/fr/2017-09-01> .
-<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n9816a97a4adb4b7390cc043208e0097fb1 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/spar/datacite/IdentifierScheme> .
-<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and agents that have contributed to the overall review as sub-reviwers."@en .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity."@en .
-<http://purl.org/spar/fr> <http://purl.org/dc/terms/created> "2017-09-01" .
-<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The realation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
-<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Groups of human language variants that are or were spoken, written, or signed at some point in time."@en .
-<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/creator> "María Poveda Villalón (https://orcid.org/0000-0003-3587-0367)"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#label> "review version"@en .
-<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for the entity (either a funder, a person, a license or a resource)."@en .
-<http://purl.org/spar/fr> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fr" .
-<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/cito/reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation according to which the citing entity reviews statements, ideas or conclusions presented in the cited entity."@en .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb11 .
-<http://purl.org/spar/cito/reviews> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/cito/> .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
-<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
-_:n9816a97a4adb4b7390cc043208e0097fb4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/ResourceIdentifierScheme> .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fabio/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#comment> "The expression that is a realization of a work."@en .
-<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en .
-_:n9816a97a4adb4b7390cc043208e0097fb3 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/hasIdentifier> .
-<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#label> "has sub-reviewer"@en .
-<http://purl.org/spar/fr> <http://purl.org/ontology/bibo/doi> "https://doi.org/10.25504/FAIRsharing.e7e609" .
-<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "review rating concept"@en .
-<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
-_:n9816a97a4adb4b7390cc043208e0097fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Review> .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "personal identifier"@en .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)."@en .
-<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/literal/> .
-_:n9816a97a4adb4b7390cc043208e0097fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#label> "released by"@en .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
-<http://purl.org/spar/fr/TrackingSystem> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedAt :my-tracking-system .\n\n	:my-tracking-system a fr:TrackingSystem .\n    " .
-<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "policy"@en .
-<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2008/05/skos#ConceptScheme> .
-_:n9816a97a4adb4b7390cc043208e0097fb5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#label> "has content"@en .
-<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-_:n9816a97a4adb4b7390cc043208e0097fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/fr> <https://schema.org/keywords> "semantic publishing"@en .
-<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/creator> "Idafen Santana Pérez (https://orcid.org/0000-0001-8296-8629)"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/cito/> .
-<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment"@en .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en .
-<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2008/05/skos#ConceptScheme> .
-<http://purl.org/spar/fr/hasRating> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc .\n\n	bido:sa-sr-bl-wacc a bido:ReviewRatingValue .\n    " .
-<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify an entity such as a funding agency, a person or a resource."@en .
-<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb6 .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ReviewRatingValue> .
-<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos#> .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of different aspects of user interests in the products of intellectual or artistic artifact."@en .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references."@en .
-<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/contributor> "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://purl.org/spar/fr/issuedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n9816a97a4adb4b7390cc043208e0097fb5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/AgentIdentifier> .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Identifier> .
-<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en .
-<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program."@en .
-<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/hasSubReviewer> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasSubReviewer :my-person .\n	\n	:my-person a foaf:Agent .\n    " .
-<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The platform where the review process takes place."@en .
-_:n9816a97a4adb4b7390cc043208e0097fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#label> "has date modified"@en .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-_:n9816a97a4adb4b7390cc043208e0097fb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
-<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "convening organization"@en .
-<http://purl.org/spar/cito/reviews> <http://www.w3.org/2000/01/rdf-schema#label> "reviews"@en .
-<http://purl.org/spar/fr> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an entity, such as a funding agency, a person or a resource."@en .
-<http://purl.org/spar/fr> <http://purl.org/dc/terms/publisher> <http://www.oeg-upm.net/> .
-<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "tracking system"@en .
-<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n9816a97a4adb4b7390cc043208e0097fb1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#label> "discrete reviewer confidence scale"@en .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/datacite/ResourceIdentifier> .
-<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/spar/fr> <http://purl.org/dc/terms/issued> "2017-11-07" .
-<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Identifier> .
-<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/AgentIdentifierScheme> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#comment> "A reified literal."@en .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and a given rating assigned by a reviewer."@en .
-<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/2000/01/rdf-schema#label> "categorial bibliometric data"@en .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#label> "language"@en .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "agent"@en .
-<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n9816a97a4adb4b7390cc043208e0097fb6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "has rating value"@en .
-<http://purl.org/spar/fr/releasedBy> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:releasedBy :my-conference .\n\n	:my-conference a foaf:Agent .\n    " .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Comment> .
-_:n9816a97a4adb4b7390cc043208e0097fb6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/PersonalIdentifierScheme> .
-<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/2000/01/rdf-schema#label> "replies to"@en .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/spar/fr/ReviewVersion> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version .\n\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;\n		fr:hasSubReviewer :my-person ;\n		fr:releasedBy :my-conference .\n    " .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the rating given by a reviewer for a specific scientific contribution."@en .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "A review of others' work."@en .
-<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "agent identifier scheme"@en .
-_:n9816a97a4adb4b7390cc043208e0097fb2 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/ConveningOrganization> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " .
-<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify an agent."@en .
-<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://purl.org/spar/fr/2017-09-01> .
-<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/IdentifierScheme> .
-<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spar/fr/2026-08-14> .
-<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/spar/fr> <https://schema.org/keywords> "bibliometrics"@en .
-<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution." .
-<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb7 .
-<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fr/TrackingSystem> .
-<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/title> "The FAIR Reviews Ontology (FR)"@en .
-<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr> <http://xmlns.com/foaf/0.1/logo> <https://github.com/SPAROntologies/fr/blob/master/spar.png> .
-_:n9816a97a4adb4b7390cc043208e0097fb12 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#label> "scholarly venue management system"@en .
-<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#label> "has reviewer confidence"@en .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "has rating"@en .
-<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
-_:n9816a97a4adb4b7390cc043208e0097fb4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/description> "\nThe **_FAIR Reviews Ontology (FR)_** defines a set of classes, properties and axioms, for describing research reviews as semantic objects, reusing standard existing vocabularies using ontology engineering techniques. \nBesides defining its own classes and properties, FR reuses many ontological elements drawn from existing ontologies such as [FaBiO](http://purl.org/spar/fabio/), [BiDO](http://purl.org/spar/bido), [DataCite](http://purl.org/spar/datacite/) from the SPAR Ontologies, and others like [ODRL](https://www.w3.org/community/odrl/), [FOAF](http://xmlns.com/foaf/0.1/), [SKOS](http://www.w3.org/2004/02/skos/core#) or the [Lexvo Ontology](http://lexvo.org/ontology). \n\n![The architecture of FR.](fr.png)\n\nIt is used to annotate http://fairreviews.linkeddata.es/ data.\n\n## Examples of use\n\nIn the following subsections, we introduce some examples to showcase how to use FR. \n\nThe prefixes that are used in all the examples provided below are defined as follows:\n\n	@prefix fr: <http://purl.org/spar/fr/> .\n	@prefix bido: <http://purl.org/spar/bido/> .\n	@prefix cito: <http://purl.org/spar/cito/> .\n	@prefix fr: <http://purl.org/spar/fr/> .\n	@prefix fabio: <http://purl.org/spar/fabio/> .\n	@prefix c4o: <http://purl.org/spar/c4o/> .\n	@prefix datacite: <http://purl.org/spar/datacite/> .\n	@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .\n	@prefix dcterms: <http://purl.org/dc/terms/> .\n\n### Describing a workshop review\n\nFR can be used to describe any kind of research review, such as a workshop review. \nMore precisely, the example represents the instantiation of the model for an existing review issued for the _SemSci2017_ workshop. \nThe original review is [available as plain text online](https://semsci.github.io/semSci2017/openReview/Paper2Reviews.txt).\n\n	<https://w3id.org/fr/resource/paper/1> a fabio:ConferencePaper ;\n		fabio:hasURL \"http://ceur-ws.org/Vol-1931/paper-01.pdf\"^^xsd:anyURI .\n\n	<https://w3id.org/fr/resource/pid/1> a datacite:PersonalIdentifier ;\n		datacite:usesIdentifierScheme datacite:orcid ;\n		literal:hasLiteralValue \"0000-0001-8296-8629\" .\n\n	<https://w3id.org/fr/resource/review/1> a fabio:Review ;\n		frbr:realization <https://w3id.org/fr/resource/rev/1> .\n\n	<https://w3id.org/fr/resource/rev/1> a fr:ReviewVersion ;\n		frbr:creator <http://w3id.org/people/idafensp> ;\n		dcterms:language <http://www.lexvo.org/page/iso639-3/eng> ;\n		dcterms:license <https://creativecommons.org/licenses/by-sa/4.0> ;\n		fr:hasRating bido:sa-sr-bl-wacc ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;\n		cito:reviews <https://w3id.org/fr/resource/paper/1> ;\n		fr:issuedAt <https://easychair.org> ;\n		fr:issuedFor <https://semsci.github.io/semSci2017> ;\n		fr:releasedBy <https://semsci.github.io/semSci2017> ;\n		dcterms:issued \"2017-08-22\"^^xsd:date ;\n		c4o:hasContent \"\"\"The paper introduces SMS, a platform for for data integration\n						in the context of STI. The paper is general well written, proposing\n						an interesting contribution as well as sufficient evidences, in the\n						form of pointers to online resources, to support its claims.\n\n						It is not clear though which is the research question being targeted\n						in this paper. The paper elaborates on the features of the SMS platform,\n						including its models and its applications, but lacks to provide insights\n						on the novelty of the approach and how it compares to others.\n\n						Also, authors could consider adding some narrative to section 3, or\n						even better, try to include those use cases as part of the descriptions\n						of the SMS platform along section 2.\n\n						As a minor comment, the abstract and the first paragraph of section 1\n						are almost identical. Authors should consider removing or rephrasing\n						them.\"\"\"^^rdfs:Literal .\n\n## Competency Questions\n\nFR can be used for answering several questions related to research reviews characteristics. \nIn the following subsections, some of them are introduced together with their respective SPARQL queries. \n\nThe prefixes that are used in all the SPARQL queries provided below are defined as follows:\n\n	PREFIX fr: <http://purl.org/spar/fr/>\n	PREFIX c4o: <http://purl.org/spar/c4o/>\n	PREFIX cito: <http://purl.org/spar/cito/>\n	PREFIX dcterms: <http://purl.org/dc/terms/>\n	PREFIX fabio: <http://purl.org/spar/fabio/>\n	PREFIX frbr: <http://purl.org/vocab/frbr/core#>\n\n### CQ1\n\nWhich document is reviewed by a specific review version, and who is its creator?\n\n	SELECT ?reviewVersion ?paper ?creator\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			cito:reviews ?paper .\n		OPTIONAL { ?reviewVersion frbr:creator ?creator . }\n	}\n\n### CQ2\n\nWhat rating and reviewer confidence score are assigned to a review version?\n\n	SELECT ?reviewVersion ?rating ?confidence\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			fr:hasRating ?rating .\n		OPTIONAL { ?reviewVersion fr:hasReviewerConfidence ?confidence . }\n	}\n\n### CQ3\n\nAt which platform was a review version issued, and for which venue or event was it issued?\n\n	SELECT ?reviewVersion ?platform ?venue\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			fr:issuedAt ?platform .\n		OPTIONAL { ?reviewVersion fr:issuedFor ?venue . }\n	}\n\n### CQ4\n\nWhich agent or entity released a review version, and on what date was it issued?\n\n	SELECT ?reviewVersion ?releasingEntity ?issueDate\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			fr:releasedBy ?releasingEntity .\n		OPTIONAL { ?reviewVersion dcterms:issued ?issueDate . }\n	}\n\n### CQ5\n\nWhat is the full review version of a review, including its textual content and license?\n\n	SELECT ?review ?reviewVersion ?content ?license\n	WHERE {\n		?review a fabio:Review ;\n			frbr:realization ?reviewVersion .\n		?reviewVersion a fr:ReviewVersion .\n		OPTIONAL { ?reviewVersion c4o:hasContent ?content . }\n		OPTIONAL { ?reviewVersion dcterms:license ?license . }\n	}\n"@en .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
-<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0" .
-<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/spar/c4o/hasContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify a person."@en .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance of the resource."@en .
-<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://lexvo.org/ontology#> .
-<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that is used to uniquely identify a resource."@en .
-<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
-<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
-<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ReviewRatingScale> .
-<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#label> "work"@en .
-<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the rating given by a reviewer for a specific scientific contribution."@en .
-<http://purl.org/spar/fr> <https://schema.org/keywords> "scholarly reviews"@en .
-<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given confidence scale."@en .
-<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
-<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/c4o/> .
-<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/datacite/Identifier> .
-<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#comment> "The textual content of a particular FRBR expression."@en .
-<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "uses identifier scheme"@en .
-<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr> <http://purl.org/dc/terms/bibliographicCitation> "Idafen Santana Pérez, María Poveda Villalón. The FAIR Review Ontology. Revision: 2.0.0. http://purl.org/spar/fr." .
-<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#comment> "Date on which the resource was changed."@en .
-_:n9816a97a4adb4b7390cc043208e0097fb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The confidence value of expertise in the review topic given by the reviewer."@en .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb5 .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n9816a97a4adb4b7390cc043208e0097fb1 .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en .
-<http://purl.org/spar/fr> <http://purl.org/vocab/vann/changes> "\n* **v2.0.0**: \nAdded new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.\nAdded the additional classes and properties from external ontologies.\nReplaced `fr:ratingValue` with `bido:hasRatingValue`, given they were identical in their implementation and the latter already existed.\nReplaced `skos:inScheme` with `bido:isDefinedIn`, given it is its subproperty that is appliable to categorical bibliometric data, such as in this case.\n	"@en .
-<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2008/05/skos#ConceptScheme> .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/cito/reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#label> "review"@en .
-_:n9816a97a4adb4b7390cc043208e0097fb8 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/usesIdentifierScheme> .
-<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/datacite> .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/literal/> .
-_:n9816a97a4adb4b7390cc043208e0097fb7 <http://www.w3.org/2002/07/owl#onProperty> _:n9816a97a4adb4b7390cc043208e0097fb8 .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fr> <https://schema.org/image> <https://github.com/SPAROntologies/fr/blob/master/docs/current/fr.png> .
-<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ReviewRatingValue> .
-<http://purl.org/spar/fr> <https://schema.org/keywords> "scholarly publishing"@en .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/datacite/IdentifierScheme> .
-<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Review> .
-<http://purl.org/spar/fr/issuedAt> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedAt :my-tracking-system .\n\n	:my-tracking-system a fr:TrackingSystem .\n    " .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
-<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "A version of a given review, defining its content and rating, which may vary over the time."@en .
-<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
-<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "has date issued"@en .
-<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
-<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "resource identifier"@en .
-<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
-<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal"@en .
-<http://purl.org/spar/fr> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/published> .
-<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.\n\nAn expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. \nExpression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.\n        "@en .
-<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an individual agent."@en .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value that a reified literal represents."@en .
-<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ReviewerConfidenceValue> .
-_:n9816a97a4adb4b7390cc043208e0097fb11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/datacite/ResourceIdentifier> .
-<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a ranking category and the ranking that defines it."@en .
-<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the confidence of a reviewer for a given topic."@en .
-<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#label> "has license"@en .
-<http://purl.org/spar/fr> <https://schema.org/includedInDataCatalog> <https://fairsharing.org/> .
-<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/IdentifierScheme> .
-<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#label> "discrete review rating scale"@en .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://purl.org/spar/fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence scale"@en .
-<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the confidence of a reviewer for a given topic."@en .
-<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The confidence value of expertise in the review topic given by the reviewer."@en .
+<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/contributor> "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
-<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA distinct intellectual or artistic creation.\n\nA work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.\n        "@en .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#label> "has URL"@en .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/datacite/IdentifierScheme> .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Comment> .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web."@en .
+<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/spar/fr> <http://purl.org/dc/terms/modified> "2026-10-05" .
+<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b6 .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to provide the identifier for an entity (either a funder, a person, a license or a resource)."@en .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "concept scheme"@en .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:nc001a537b488402f9048a6db3c0dfea8b3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/PersonalIdentifierScheme> .
+<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://purl.org/spar/fr> <https://schema.org/image> <https://github.com/SPAROntologies/fr/blob/master/docs/current/fr.png> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator" .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an individual agent."@en .
+<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fr/TrackingSystem> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:nc001a537b488402f9048a6db3c0dfea8b6 <http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b7 .
+<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b3 .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/datacite/ResourceIdentifier> .
+<http://purl.org/spar/fr> <http://purl.org/vocab/vann/changes> <https://github.com/SPAROntologies/fr/blob/master/CHANGELOG.md> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the rating given to a review."@en .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the rating given by a reviewer for a specific scientific contribution."@en .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#label> "has reviewer confidence"@en .
 <http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource."@en .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a ranking category and the ranking that defines it."@en .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify an entity such as a funding agency, a person or a resource."@en .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "has rating"@en .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#label> "discrete reviewer confidence scale"@en .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is defined in ranking"@en .
+<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/cito/> .
+<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "resource identifier"@en .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ReviewerConfidenceValue> .
+<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/2000/01/rdf-schema#label> "replies to"@en .
+<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#label> "issued at"@en .
+_:nc001a537b488402f9048a6db3c0dfea8b10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:nc001a537b488402f9048a6db3c0dfea8b8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/ResourceIdentifierScheme> .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/date> "2026-10-05" .
+<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "agent"@en .
+<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/spar/fr> <http://purl.org/dc/terms/issued> "2017-11-07" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spar/fr/2026-10-05> .
+<http://purl.org/spar/fr/TrackingSystem> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedAt :my-tracking-system .\n\n	:my-tracking-system a fr:TrackingSystem .\n    " .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#label> "discrete review rating scale"@en .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "agent identifier"@en .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 .\n\n	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .\n    " .
+<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b4 .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nc001a537b488402f9048a6db3c0dfea8b9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+_:nc001a537b488402f9048a6db3c0dfea8b6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/datacite/ResourceIdentifier> .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/contributor> "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en .
+_:nc001a537b488402f9048a6db3c0dfea8b3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "A review of others' work."@en .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/literal/> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Identifier> .
+<http://purl.org/spar/fr> <http://purl.org/dc/terms/created> "2017-09-01" .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/creator> "Idafen Santana Pérez (https://orcid.org/0000-0001-8296-8629)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the confidence of a reviewer for a given topic."@en .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "convening organization"@en .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#label> "has date modified"@en .
+<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#comment> "Date on which the resource was changed."@en .
+<http://purl.org/spar/fr/ReviewVersion> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version .\n\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;\n		fr:hasSubReviewer :my-person ;\n		fr:releasedBy :my-conference .\n    " .
+<http://purl.org/spar/fr> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/published> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b10 .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.\n\nAn expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. \nExpression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.\n        "@en .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#label> "review"@en .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program."@en .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.sparontologies.net/ontologies/fr> .
+_:nc001a537b488402f9048a6db3c0dfea8b11 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#label> "work"@en .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#label> "has license"@en .
+<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "resource identifier scheme"@en .
+<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#label> "language"@en .
+_:nc001a537b488402f9048a6db3c0dfea8b1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/datacite/AgentIdentifier> .
+<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Groups of human language variants that are or were spoken, written, or signed at some point in time."@en .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identities an entity, such as a funding agency, a person or a resource."@en .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/spar/cito/reviews> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/cito/> .
+<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "personal identifier"@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/spar/fr/ConveningOrganization> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "has date issued"@en .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#label> "work"@en .
+<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#label> "issued for"@en .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#comment> "The expression that is a realization of a work."@en .
+<http://purl.org/spar/fr> <https://schema.org/includedInDataCatalog> <https://fairsharing.org/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "has literal value"@en .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "uses identifier scheme"@en .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "policy"@en .
+<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that is used to uniquely identify a resource."@en .
+<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+_:nc001a537b488402f9048a6db3c0dfea8b2 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+<http://purl.org/spar/fr> <https://schema.org/keywords> "semantic publishing"@en .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b1 .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:nc001a537b488402f9048a6db3c0dfea8b10 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/spar/datacite/IdentifierScheme> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier that uniquely identifies an individual person."@en .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/literal/> .
+_:nc001a537b488402f9048a6db3c0dfea8b10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fr> <https://schema.org/keywords> "bibliometrics"@en .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-empty group of permissions and/or prohibitions."@en .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nc001a537b488402f9048a6db3c0dfea8b1 <http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b2 .
+<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ScholarlyVenueManagementSystem> .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#label> "review version"@en .
+<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The platform where the review process takes place."@en .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr> <http://xmlns.com/foaf/0.1/logo> <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+_:nc001a537b488402f9048a6db3c0dfea8b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Review> .
+<http://purl.org/spar/fr/hasRating> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasRating bido:sa-sr-bl-wacc .\n\n	bido:sa-sr-bl-wacc a bido:ReviewRatingValue .\n    " .
+<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "agent identifier scheme"@en .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions."@en .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fabio/Review> .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ReviewRatingScale> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#label> "has language"@en .
+_:nc001a537b488402f9048a6db3c0dfea8b4 <http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b5 .
+<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#priorVersion> <http://purl.org/spar/fr/2026-08-14> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues."@en .
+<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/spar/cito/reviews> <http://www.w3.org/2000/01/rdf-schema#label> "reviews"@en .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal document giving official permission to do something with the resource."@en .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
+<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/fr> <http://www.w3.org/2000/01/rdf-schema#label> "FAIR Reviews Ontology (FR)"@en .
+<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en .
+_:nc001a537b488402f9048a6db3c0dfea8b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for the entity (either a funder, a person, a license or a resource)."@en .
+<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given confidence scale."@en .
+<http://purl.org/spar/fr> <http://purl.org/dc/terms/source> <https://github.com/SPAROntologies/fr/blob/master/docs/cq.md> .
+<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence scale"@en .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#label> "has sub-reviewer"@en .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+<http://purl.org/spar/fr> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/spar/fr" .
+<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of values of a given rating scale."@en .
+_:nc001a537b488402f9048a6db3c0dfea8b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify a resource."@en .
+<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "review rating concept"@en .
+<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and agents that have contributed to the overall review as sub-reviwers."@en .
+<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/IdentifierScheme> .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the rating given by a reviewer for a specific scientific contribution."@en .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#label> "has confidence value"@en .
+<http://purl.org/spar/cito/reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nc001a537b488402f9048a6db3c0dfea8b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the tracking or scholarly venue management system where the reviewing process took place."@en .
+<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/datacite/Identifier> .
+<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b8 .
+_:nc001a537b488402f9048a6db3c0dfea8b7 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+_:nc001a537b488402f9048a6db3c0dfea8b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://purl.org/spar/fr/2026-08-14> .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorical information that characterises publication-related entities from a bibliometric point of view."@en .
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance of the resource."@en .
+<http://purl.org/spar/fr> <http://purl.org/dc/terms/publisher> <http://www.oeg-upm.net/> .
+<http://purl.org/spar/cito/repliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity."@en .
+<http://purl.org/spar/bido/DiscreteReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fr> <https://schema.org/keywords> "scientometrics"@en .
+<http://purl.org/spar/fr/ConveningOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fr/> .
+_:nc001a537b488402f9048a6db3c0dfea8b12 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/hasIdentifier> .
+_:nc001a537b488402f9048a6db3c0dfea8b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ReviewRatingValue> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify a person."@en .
+<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier scheme used to identify an agent."@en .
+<http://purl.org/spar/datacite/AgentIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/ResourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Identifier> .
+<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "identifier scheme"@en .
+<http://purl.org/spar/fr/ReviewVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "A version of a given review, defining its content and rating, which may vary over the time."@en .
+<http://purl.org/spar/fr/hasSubReviewer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
+_:nc001a537b488402f9048a6db3c0dfea8b8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:nc001a537b488402f9048a6db3c0dfea8b11 <http://www.w3.org/2002/07/owl#onProperty> _:nc001a537b488402f9048a6db3c0dfea8b12 .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+<http://purl.org/spar/fr/hasSubReviewer> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:hasSubReviewer :my-person .\n	\n	:my-person a foaf:Agent .\n    " .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Expression, restricted to expressions of `fabio:Work`."@en .
+<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/fr/ConveningOrganization> .
+<http://purl.org/spar/fr/issuedAt> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedAt :my-tracking-system .\n\n	:my-tracking-system a fr:TrackingSystem .\n    " .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos#> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/datacite/Identifier> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)."@en .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/CategorialBibliometricData> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en .
+<http://purl.org/spar/fr> <http://purl.org/dc/terms/bibliographicCitation> "Idafen Santana Pérez, María Poveda Villalón. The FAIR Review Ontology. Revision: 2.0.0. DOI: https://doi.org/10.25504/FAIRsharing.e7e609." .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b11 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of different aspects of user interests in the products of intellectual or artistic artifact."@en .
+<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/AgentIdentifierScheme> .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/spar/bido/hasConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ReviewerConfidenceValue> .
+<http://purl.org/spar/fr> <https://schema.org/keywords> "Semantic Publishing and Referencing Ontologies"@en .
+<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/IdentifierScheme> .
+<http://purl.org/spar/datacite/AgentIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc001a537b488402f9048a6db3c0dfea8b9 .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ReviewRatingValue> .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/ReviewerConfidenceScale> .
+<http://purl.org/spar/fr/releasedBy> <http://purl.org/vocab/vann/example> "\n	:my-review-version a fr:ReviewVersion ;\n		fr:releasedBy :my-conference .\n\n	:my-conference a foaf:Agent .\n    " .
+<http://purl.org/spar/cito/reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation according to which the citing entity reviews statements, ideas or conclusions presented in the cited entity."@en .
+<http://purl.org/spar/fr> <https://schema.org/keywords> "SPAR Ontologies"@en .
+<http://purl.org/spar/datacite/PersonalIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "personal identifier scheme"@en .
+<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA distinct intellectual or artistic creation.\n\nA work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.\n        "@en .
+<http://purl.org/spar/fabio/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/DiscreteReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A discrete scale defining the confidence of a reviewer for a given topic."@en .
+<http://purl.org/spar/fr/issuedAt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nc001a537b488402f9048a6db3c0dfea8b5 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/datacite/usesIdentifierScheme> .
+_:nc001a537b488402f9048a6db3c0dfea8b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nc001a537b488402f9048a6db3c0dfea8b9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/datacite/AgentIdentifier> .
+<http://purl.org/spar/bido/ReviewerConfidenceScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+<http://purl.org/spar/bido/ReviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value that a reified literal represents."@en .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#comment> "A reified literal."@en .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references."@en .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#comment> "The textual content of a particular FRBR expression."@en .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#label> "review rating scale"@en .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and the agent publishing it. It might be the author of the review or conference or journal to which the scientific resource was submitted to."@en .
+<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#label> "has content"@en .
+<http://purl.org/spar/fr> <https://schema.org/keywords> "scholarly reviews"@en .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#label> "scholarly venue management system"@en .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal"@en .
+<http://purl.org/spar/bido/ReviewerConfidenceValue> <http://www.w3.org/2000/01/rdf-schema#label> "reviewer confidence value"@en .
+<http://purl.org/spar/fr> <http://purl.org/ontology/bibo/doi> "https://doi.org/10.25504/FAIRsharing.e7e609" .
+<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.1" .
+<http://purl.org/spar/fr/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a review and a given rating assigned by a reviewer."@en .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://lexvo.org/ontology#> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "has rating value"@en .
+<http://purl.org/spar/fr> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/datacite> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment"@en .
+<http://purl.org/spar/fr/TrackingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "tracking system"@en .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/contributor> "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/fr/issuedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution." .
+<http://purl.org/spar/datacite/ResourceIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/CategorialBibliometricData> <http://www.w3.org/2000/01/rdf-schema#label> "categorial bibliometric data"@en .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."@en .
+<http://purl.org/spar/fabio/hasURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fr> <https://schema.org/codeRepository> <https://github.com/SPAROntologies/fr> .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/language> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+<http://purl.org/spar/fr> <https://schema.org/keywords> "scholarly publishing"@en .
+<http://purl.org/spar/fr> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://lexvo.org/ontology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
+_:nc001a537b488402f9048a6db3c0dfea8b4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/datacite/PersonalIdentifier> .
+<http://purl.org/spar/fr> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fr" .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/description> "\nThe **_FAIR Reviews Ontology (FR)_** defines a set of classes, properties and axioms, for describing research reviews as semantic objects, reusing standard existing vocabularies using ontology engineering techniques. \nBesides defining its own classes and properties, FR reuses many ontological elements drawn from existing ontologies such as [FaBiO](http://purl.org/spar/fabio/), [BiDO](http://purl.org/spar/bido), [DataCite](http://purl.org/spar/datacite/) from the SPAR Ontologies, and others like [ODRL](https://www.w3.org/community/odrl/), [FOAF](http://xmlns.com/foaf/0.1/), [SKOS](http://www.w3.org/2004/02/skos/core#) or the [Lexvo Ontology](http://lexvo.org/ontology). \n\n![The architecture of FR.](fr.png)\n\nIt is used to annotate http://fairreviews.linkeddata.es/ data.\n\n## Examples of use\n\nIn the following subsections, we introduce some examples to showcase how to use FR. \n\nThe prefixes that are used in all the examples provided below are defined as follows:\n\n	@prefix fr: <http://purl.org/spar/fr/> .\n	@prefix bido: <http://purl.org/spar/bido/> .\n	@prefix cito: <http://purl.org/spar/cito/> .\n	@prefix fr: <http://purl.org/spar/fr/> .\n	@prefix fabio: <http://purl.org/spar/fabio/> .\n	@prefix c4o: <http://purl.org/spar/c4o/> .\n	@prefix datacite: <http://purl.org/spar/datacite/> .\n	@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .\n	@prefix dcterms: <http://purl.org/dc/terms/> .\n\n### Describing a workshop review\n\nFR can be used to describe any kind of research review, such as a workshop review. \nMore precisely, the example represents the instantiation of the model for an existing review issued for the _SemSci2017_ workshop. \nThe original review is [available as plain text online](https://semsci.github.io/semSci2017/openReview/Paper2Reviews.txt).\n\n	<https://w3id.org/fr/resource/paper/1> a fabio:ConferencePaper ;\n		fabio:hasURL \"http://ceur-ws.org/Vol-1931/paper-01.pdf\"^^xsd:anyURI .\n\n	<https://w3id.org/fr/resource/pid/1> a datacite:PersonalIdentifier ;\n		datacite:usesIdentifierScheme datacite:orcid ;\n		literal:hasLiteralValue \"0000-0001-8296-8629\" .\n\n	<https://w3id.org/fr/resource/review/1> a fabio:Review ;\n		frbr:realization <https://w3id.org/fr/resource/rev/1> .\n\n	<https://w3id.org/fr/resource/rev/1> a fr:ReviewVersion ;\n		frbr:creator <http://w3id.org/people/idafensp> ;\n		dcterms:language <http://www.lexvo.org/page/iso639-3/eng> ;\n		dcterms:license <https://creativecommons.org/licenses/by-sa/4.0> ;\n		fr:hasRating bido:sa-sr-bl-wacc ;\n		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;\n		cito:reviews <https://w3id.org/fr/resource/paper/1> ;\n		fr:issuedAt <https://easychair.org> ;\n		fr:issuedFor <https://semsci.github.io/semSci2017> ;\n		fr:releasedBy <https://semsci.github.io/semSci2017> ;\n		dcterms:issued \"2017-08-22\"^^xsd:date ;\n		c4o:hasContent \"\"\"The paper introduces SMS, a platform for for data integration\n            in the context of STI. The paper is general well written, proposing\n            an interesting contribution as well as sufficient evidences, in the\n            form of pointers to online resources, to support its claims.\n\n            It is not clear though which is the research question being targeted\n            in this paper. The paper elaborates on the features of the SMS platform,\n            including its models and its applications, but lacks to provide insights\n            on the novelty of the approach and how it compares to others.\n\n            Also, authors could consider adding some narrative to section 3, or\n            even better, try to include those use cases as part of the descriptions\n            of the SMS platform along section 2.\n\n            As a minor comment, the abstract and the first paragraph of section 1\n            are almost identical. Authors should consider removing or rephrasing\n            them.\"\"\"^^rdfs:Literal .\n\n## Competency Questions\n\nFR can be used for answering several questions related to research reviews characteristics. \nIn the following subsections, some of them are introduced together with their respective SPARQL queries. \n\nThe prefixes that are used in all the SPARQL queries provided below are defined as follows:\n\n	PREFIX fr: <http://purl.org/spar/fr/>\n	PREFIX c4o: <http://purl.org/spar/c4o/>\n	PREFIX cito: <http://purl.org/spar/cito/>\n	PREFIX dcterms: <http://purl.org/dc/terms/>\n	PREFIX fabio: <http://purl.org/spar/fabio/>\n	PREFIX frbr: <http://purl.org/vocab/frbr/core#>\n\n### CQ1\n\nWhich document is reviewed by a specific review version, and who is its creator?\n\n	SELECT ?reviewVersion ?paper ?creator\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			cito:reviews ?paper .\n		OPTIONAL { ?reviewVersion frbr:creator ?creator . }\n	}\n\n### CQ2\n\nWhat rating and reviewer confidence score are assigned to a review version?\n\n	SELECT ?reviewVersion ?rating ?confidence\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			fr:hasRating ?rating .\n		OPTIONAL { ?reviewVersion fr:hasReviewerConfidence ?confidence . }\n	}\n\n### CQ3\n\nAt which platform was a review version issued, and for which venue or event was it issued?\n\n	SELECT ?reviewVersion ?platform ?venue\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			fr:issuedAt ?platform .\n		OPTIONAL { ?reviewVersion fr:issuedFor ?venue . }\n	}\n\n### CQ4\n\nWhich agent or entity released a review version, and on what date was it issued?\n\n	SELECT ?reviewVersion ?releasingEntity ?issueDate\n	WHERE {\n		?reviewVersion a fr:ReviewVersion ;\n			fr:releasedBy ?releasingEntity .\n		OPTIONAL { ?reviewVersion dcterms:issued ?issueDate . }\n	}\n\n### CQ5\n\nWhat is the full review version of a review, including its textual content and license?\n\n	SELECT ?review ?reviewVersion ?content ?license\n	WHERE {\n		?review a fabio:Review ;\n			frbr:realization ?reviewVersion .\n		?reviewVersion a fr:ReviewVersion .\n		OPTIONAL { ?reviewVersion c4o:hasContent ?content . }\n		OPTIONAL { ?reviewVersion dcterms:license ?license . }\n	}\n"@en .
+<http://purl.org/spar/fr/issuedFor> <http://purl.org/vocab/vann/example> "\n	:my-review a fabio:Review ;\n		frbr:realization :my-review-version ;\n		fr:issuedFor :my-convening-organization .\n\n	:my-convening-organization a fr:ConveningOrganization .\n    " .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/creator> "María Poveda Villalón (https://orcid.org/0000-0003-3587-0367)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#label> "released by"@en .
+_:nc001a537b488402f9048a6db3c0dfea8b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/c4o/hasContent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/c4o/> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fr/hasReviewerConfidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fr/releasedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/fr/ReviewVersion> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/spar/fr> <http://purl.org/dc/elements/1.1/title> "The FAIR Reviews Ontology (FR)"@en .
+<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/AgentIdentifier> .

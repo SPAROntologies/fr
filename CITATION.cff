@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: The FAIR Reviews Ontology (FR)
+message: >-
+If you use this software, please cite it using the
+metadata from this file.
+type: software
+authors:
+- given-names: Idafen
+  family-names: Santana-Perez
+- given-names: María
+  family-names: Poveda-Villalón
+  orcid: 'http://orcid.org/0000-0003-3587-0367'
+identifiers:
+- type: doi
+  value: 10.25504/FAIRsharing.e7e609
+repository-code: 'https://github.com/SPAROntologies/fr'
+url: 'http://www.sparontologies.net/ontologies/fr'
+abstract: The FAIR Reviews Ontology (FR) is an OWL 2 DL ontology for describing research reviews as semantic objects.
+keywords:
+- scholarly reviews
+- bibliometrics
+- scholarly publishing
+- scientometrics
+- semantic publishing
+license: CC-BY-4.0
+version: 2.0.1
+date-released: '2026-10-05'

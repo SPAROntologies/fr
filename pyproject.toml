@@ -1,11 +1,7 @@
 [project]
 name = "fr"
-version = "0.1.0"
-description = "Add your description here"
+version = "2.0.1"
+description = "The FAIR Reviews Ontology (FR) is an OWL 2 DL ontology for describing research reviews as semantic objects."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "codespell>=2.4.3",
-    "rdflib>=7.6.0",
-    "requests>=2.34.2",
-]
+dependencies = []

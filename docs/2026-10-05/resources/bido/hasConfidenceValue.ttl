@@ -1,0 +1,11 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bido:hasConfidenceValue a owl:DatatypeProperty ;
+    rdfs:label "has confidence value"@en ;
+    rdfs:comment "The confidence value of expertise in the review topic given by the reviewer."@en ;
+    rdfs:domain bido:ReviewerConfidenceValue ;
+    rdfs:isDefinedBy bido: ;
+    rdfs:range rdfs:Literal .
+

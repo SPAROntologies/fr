@@ -1,0 +1,11 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+
+bido:ReviewRatingScale a owl:Class ;
+    rdfs:label "review rating scale"@en ;
+    rdfs:comment "A scale defining the rating given by a reviewer for a specific scientific contribution."@en ;
+    rdfs:isDefinedBy bido: ;
+    rdfs:subClassOf skos1:ConceptScheme .
+

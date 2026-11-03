@@ -16,7 +16,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix reg: <http://purl.org/linked-data/registry#> .
 @prefix schema: <https://schema.org/> .
-@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -34,34 +34,29 @@ dc:language a owl:AnnotationProperty .
 
 dc:rights a owl:AnnotationProperty .
 
-dcterms:creator a owl:AnnotationProperty,
-        owl:ObjectProperty ;
+dcterms:creator a owl:ObjectProperty ;
     rdfs:label "has creator" ;
     rdfs:comment "An entity responsible for making the resource."@en ;
     rdfs:isDefinedBy dcterms: ;
     rdfs:range foaf:Agent .
 
-dcterms:issued a owl:AnnotationProperty,
-        owl:DatatypeProperty ;
+dcterms:issued a owl:DatatypeProperty ;
     rdfs:label "has date issued"@en ;
     rdfs:comment "Date of formal issuance of the resource."@en ;
     rdfs:isDefinedBy dcterms: ;
     rdfs:range rdfs:Literal .
 
-dcterms:language a owl:AnnotationProperty,
-        owl:ObjectProperty ;
+dcterms:language a owl:ObjectProperty ;
     rdfs:label "has language"@en ;
     rdfs:comment "A language of the resource."@en ;
     rdfs:isDefinedBy dcterms: .
 
-dcterms:license a owl:AnnotationProperty,
-        owl:Class ;
+dcterms:license a owl:ObjectProperty ;
     rdfs:label "has license"@en ;
     rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
     rdfs:isDefinedBy dcterms: .
 
-dcterms:modified a owl:AnnotationProperty,
-        owl:DatatypeProperty ;
+dcterms:modified a owl:DatatypeProperty ;
     rdfs:label "has date modified"@en ;
     rdfs:comment "Date on which the resource was changed."@en ;
     rdfs:isDefinedBy dcterms: ;
@@ -98,7 +93,7 @@ bido:isDefinedIn a owl:ObjectProperty ;
     rdfs:comment "A relation between a ranking category and the ranking that defines it."@en ;
     rdfs:domain bido:CategorialBibliometricData ;
     rdfs:isDefinedBy bido: ;
-    rdfs:range skos1:ConceptScheme .
+    rdfs:range skos:ConceptScheme .
 
 c4o:hasContent a owl:DatatypeProperty ;
     rdfs:label "has content"@en ;
@@ -130,7 +125,7 @@ fabio:hasURL a owl:DatatypeProperty ;
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
     dc:creator "Idafen Santana Pérez (https://orcid.org/0000-0001-8296-8629)"^^xsd:string,
         "María Poveda Villalón (https://orcid.org/0000-0003-3587-0367)"^^xsd:string ;
-    dc:date "2026-08-14" ;
+    dc:date "2026-10-05" ;
     dc:description """
 The **_FAIR Reviews Ontology (FR)_** defines a set of classes, properties and axioms, for describing research reviews as semantic objects, reusing standard existing vocabularies using ontology engineering techniques. 
 Besides defining its own classes and properties, FR reuses many ontological elements drawn from existing ontologies such as [FaBiO](http://purl.org/spar/fabio/), [BiDO](http://purl.org/spar/bido), [DataCite](http://purl.org/spar/datacite/) from the SPAR Ontologies, and others like [ODRL](https://www.w3.org/community/odrl/), [FOAF](http://xmlns.com/foaf/0.1/), [SKOS](http://www.w3.org/2004/02/skos/core#) or the [Lexvo Ontology](http://lexvo.org/ontology). 
@@ -183,22 +178,22 @@ The original review is [available as plain text online](https://semsci.github.io
 		fr:releasedBy <https://semsci.github.io/semSci2017> ;
 		dcterms:issued "2017-08-22"^^xsd:date ;
 		c4o:hasContent \"\"\"The paper introduces SMS, a platform for for data integration
-						in the context of STI. The paper is general well written, proposing
-						an interesting contribution as well as sufficient evidences, in the
-						form of pointers to online resources, to support its claims.
+            in the context of STI. The paper is general well written, proposing
+            an interesting contribution as well as sufficient evidences, in the
+            form of pointers to online resources, to support its claims.
 
-						It is not clear though which is the research question being targeted
-						in this paper. The paper elaborates on the features of the SMS platform,
-						including its models and its applications, but lacks to provide insights
-						on the novelty of the approach and how it compares to others.
+            It is not clear though which is the research question being targeted
+            in this paper. The paper elaborates on the features of the SMS platform,
+            including its models and its applications, but lacks to provide insights
+            on the novelty of the approach and how it compares to others.
 
-						Also, authors could consider adding some narrative to section 3, or
-						even better, try to include those use cases as part of the descriptions
-						of the SMS platform along section 2.
+            Also, authors could consider adding some narrative to section 3, or
+            even better, try to include those use cases as part of the descriptions
+            of the SMS platform along section 2.
 
-						As a minor comment, the abstract and the first paragraph of section 1
-						are almost identical. Authors should consider removing or rephrasing
-						them.\"\"\"^^rdfs:Literal .
+            As a minor comment, the abstract and the first paragraph of section 1
+            are almost identical. Authors should consider removing or rephrasing
+            them.\"\"\"^^rdfs:Literal .
 
 ## Competency Questions
 
@@ -272,35 +267,33 @@ What is the full review version of a review, including its textual content and l
 	}
 """@en ;
     dc:title "The FAIR Reviews Ontology (FR)"@en ;
-    dcterms:bibliographicCitation "Idafen Santana Pérez, María Poveda Villalón. The FAIR Review Ontology. Revision: 2.0.0. http://purl.org/spar/fr." ;
+    dcterms:bibliographicCitation "Idafen Santana Pérez, María Poveda Villalón. The FAIR Review Ontology. Revision: 2.0.0. DOI: https://doi.org/10.25504/FAIRsharing.e7e609." ;
     dcterms:created "2017-09-01" ;
     dcterms:issued "2017-11-07" ;
     dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2026-08-14" ;
+    dcterms:modified "2026-10-05" ;
     dcterms:publisher <http://www.oeg-upm.net/> ;
     dcterms:source <https://github.com/SPAROntologies/fr/blob/master/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.e7e609" ;
     bibo:status <http://purl.org/ontology/bibo/status/published> ;
-    vann:changes """
-* **v2.0.0**: 
-Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-Added the additional classes and properties from external ontologies.
-Replaced `fr:ratingValue` with `bido:hasRatingValue`, given they were identical in their implementation and the latter already existed.
-Replaced `skos:inScheme` with `bido:isDefinedIn`, given it is its subproperty that is appliable to categorical bibliometric data, such as in this case.
-	"""@en ;
+    vann:changes <https://github.com/SPAROntologies/fr/blob/master/CHANGELOG.md> ;
     vann:preferredNamespacePrefix "fr" ;
     vann:preferredNamespaceUri "http://purl.org/spar/fr" ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/fr> ;
-    owl:backwardCompatibleWith fr:2017-09-01 ;
+    owl:backwardCompatibleWith fr:2026-08-14 ;
     owl:imports <http://purl.org/spar/datacite> ;
-    owl:priorVersion fr:2017-09-01 ;
-    owl:versionIRI fr:2026-08-14 ;
-    owl:versionInfo "2.0.0" ;
-    foaf:logo <https://github.com/SPAROntologies/fr/blob/master/spar.png> ;
+    owl:priorVersion fr:2026-08-14 ;
+    owl:versionIRI fr:2026-10-05 ;
+    owl:versionInfo "2.0.1" ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/fr> ;
     schema:image <https://github.com/SPAROntologies/fr/blob/master/docs/current/fr.png> ;
     schema:includedInDataCatalog <https://fairsharing.org/> ;
-    schema:keywords "bibliometrics"@en,
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "bibliometrics"@en,
         "scholarly publishing"@en,
         "scholarly reviews"@en,
         "scientometrics"@en,
@@ -372,7 +365,7 @@ fr:issuedFor a owl:ObjectProperty ;
 
 	:my-convening-organization a fr:ConveningOrganization .
     """ ;
-    rdfs:comment "The realation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en ;
+    rdfs:comment "The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review)."@en ;
     rdfs:domain fabio:Review ;
     rdfs:isDefinedBy fr: ;
     rdfs:range fr:ConveningOrganization ;
@@ -416,13 +409,13 @@ bido:ReviewRatingScale a owl:Class ;
     rdfs:label "review rating scale"@en ;
     rdfs:comment "A scale defining the rating given by a reviewer for a specific scientific contribution."@en ;
     rdfs:isDefinedBy bido: ;
-    rdfs:subClassOf skos1:ConceptScheme .
+    rdfs:subClassOf skos:ConceptScheme .
 
 bido:ReviewerConfidenceScale a owl:Class ;
     rdfs:label "reviewer confidence scale"@en ;
     rdfs:comment "A scale defining the confidence of a reviewer for a given topic."@en ;
     rdfs:isDefinedBy bido: ;
-    rdfs:subClassOf skos1:ConceptScheme .
+    rdfs:subClassOf skos:ConceptScheme .
 
 bido:ScholarlyVenueManagementSystem a owl:Class ;
     rdfs:label "scholarly venue management system"@en ;
@@ -581,17 +574,17 @@ datacite:AgentIdentifier a owl:Class ;
 frbr:Expression a owl:Class ;
     rdfs:label "expression"@en ;
     rdfs:comment """
-The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 
 An expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. 
 Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.
         """@en ;
     rdfs:isDefinedBy frbr: .
 
-skos1:ConceptScheme a owl:Class ;
+skos:ConceptScheme a owl:Class ;
     rdfs:label "concept scheme"@en ;
     rdfs:comment "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."@en ;
-    rdfs:isDefinedBy skos1: .
+    rdfs:isDefinedBy skos: .
 
 datacite:Identifier a owl:Class ;
     rdfs:label "identifier"@en ;

@@ -11,16 +11,119 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onClass rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
-    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  <rdf:Description rdf:about="http://purl.org/spar/fr/issuedAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">issued at</rdfs:label>
+    <vann:example>
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version ;
+		fr:issuedAt :my-tracking-system .
+
+	:my-tracking-system a fr:TrackingSystem .
+    </vann:example>
+    <rdfs:comment xml:lang="en">The relation between a review and the tracking or scholarly venue management system where the reviewing process took place.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Review"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:range rdf:resource="http://purl.org/spar/fr/TrackingSystem"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/c4o/hasContent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has content</rdfs:label>
+    <rdfs:comment xml:lang="en">The textual content of a particular FRBR expression.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/c4o/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">endeavour</rdfs:label>
+    <rdfs:comment xml:lang="en">The set of different aspects of user interests in the products of intellectual or artistic artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/hasConfidenceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has confidence value</rdfs:label>
+    <rdfs:comment xml:lang="en">The confidence value of expertise in the review topic given by the reviewer.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fr/hasSubReviewer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has sub-reviewer</rdfs:label>
+    <vann:example>
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasSubReviewer :my-person .
+	
+	:my-person a foaf:Agent .
+    </vann:example>
+    <rdfs:comment xml:lang="en">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fr/TrackingSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">tracking system</rdfs:label>
+    <vann:example>
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version ;
+		fr:issuedAt :my-tracking-system .
+
+	:my-tracking-system a fr:TrackingSystem .
+    </vann:example>
+    <rdfs:comment xml:lang="en">The platform where the review process takes place.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ScholarlyVenueManagementSystem"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/hasURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has URL</rdfs:label>
+    <rdfs:comment xml:lang="en">An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">uses identifier scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">The identifier scheme used to provide the identifier for an entity (either a funder, a person, a license or a resource).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:range rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fr/ReviewVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">review version</rdfs:label>
+    <vann:example>
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version .
+
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasRating bido:sa-sr-bl-wacc ;
+		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;
+		fr:hasSubReviewer :my-person ;
+		fr:releasedBy :my-conference .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A version of a given review, defining its content and rating, which may vary over the time.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Comment"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fr">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:label xml:lang="en">FAIR Reviews Ontology (FR)</rdfs:label>
-    <owl:imports rdf:resource="http://purl.org/spar/datacite"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</dc:contributor>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Idafen Santana Pérez (https://orcid.org/0000-0001-8296-8629)</dc:creator>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">María Poveda Villalón (https://orcid.org/0000-0003-3587-0367)</dc:creator>
+    <dc:date>2026-10-05</dc:date>
     <dc:description xml:lang="en">
 The **_FAIR Reviews Ontology (FR)_** defines a set of classes, properties and axioms, for describing research reviews as semantic objects, reusing standard existing vocabularies using ontology engineering techniques. 
 Besides defining its own classes and properties, FR reuses many ontological elements drawn from existing ontologies such as [FaBiO](http://purl.org/spar/fabio/), [BiDO](http://purl.org/spar/bido), [DataCite](http://purl.org/spar/datacite/) from the SPAR Ontologies, and others like [ODRL](https://www.w3.org/community/odrl/), [FOAF](http://xmlns.com/foaf/0.1/), [SKOS](http://www.w3.org/2004/02/skos/core#) or the [Lexvo Ontology](http://lexvo.org/ontology). 
@@ -73,22 +176,22 @@ The original review is [available as plain text online](https://semsci.github.io
 		fr:releasedBy &lt;https://semsci.github.io/semSci2017&gt; ;
 		dcterms:issued "2017-08-22"^^xsd:date ;
 		c4o:hasContent """The paper introduces SMS, a platform for for data integration
-						in the context of STI. The paper is general well written, proposing
-						an interesting contribution as well as sufficient evidences, in the
-						form of pointers to online resources, to support its claims.
+            in the context of STI. The paper is general well written, proposing
+            an interesting contribution as well as sufficient evidences, in the
+            form of pointers to online resources, to support its claims.
 
-						It is not clear though which is the research question being targeted
-						in this paper. The paper elaborates on the features of the SMS platform,
-						including its models and its applications, but lacks to provide insights
-						on the novelty of the approach and how it compares to others.
+            It is not clear though which is the research question being targeted
+            in this paper. The paper elaborates on the features of the SMS platform,
+            including its models and its applications, but lacks to provide insights
+            on the novelty of the approach and how it compares to others.
 
-						Also, authors could consider adding some narrative to section 3, or
-						even better, try to include those use cases as part of the descriptions
-						of the SMS platform along section 2.
+            Also, authors could consider adding some narrative to section 3, or
+            even better, try to include those use cases as part of the descriptions
+            of the SMS platform along section 2.
 
-						As a minor comment, the abstract and the first paragraph of section 1
-						are almost identical. Authors should consider removing or rephrasing
-						them."""^^rdfs:Literal .
+            As a minor comment, the abstract and the first paragraph of section 1
+            are almost identical. Authors should consider removing or rephrasing
+            them."""^^rdfs:Literal .
 
 ## Competency Questions
 
@@ -161,44 +264,107 @@ What is the full review version of a review, including its textual content and l
 		OPTIONAL { ?reviewVersion dcterms:license ?license . }
 	}
 </dc:description>
-    <dcterms:modified>2026-08-14</dcterms:modified>
-    <dc:date>2026-08-14</dc:date>
-    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</dc:contributor>
-    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
+    <dc:title xml:lang="en">The FAIR Reviews Ontology (FR)</dc:title>
+    <dcterms:bibliographicCitation>Idafen Santana Pérez, María Poveda Villalón. The FAIR Review Ontology. Revision: 2.0.0. DOI: https://doi.org/10.25504/FAIRsharing.e7e609.</dcterms:bibliographicCitation>
     <dcterms:created>2017-09-01</dcterms:created>
-    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/fr/2017-09-01"/>
-    <owl:priorVersion rdf:resource="http://purl.org/spar/fr/2017-09-01"/>
-    <owl:versionIRI rdf:resource="http://purl.org/spar/fr/2026-08-14"/>
-    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Idafen Santana Pérez (https://orcid.org/0000-0001-8296-8629)</dc:creator>
-    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">María Poveda Villalón (https://orcid.org/0000-0003-3587-0367)</dc:creator>
     <dcterms:issued>2017-11-07</dcterms:issued>
     <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    <owl:versionInfo>2.0.0</owl:versionInfo>
-    <vann:preferredNamespaceUri>http://purl.org/spar/fr</vann:preferredNamespaceUri>
-    <dc:title xml:lang="en">The FAIR Reviews Ontology (FR)</dc:title>
+    <dcterms:modified>2026-10-05</dcterms:modified>
     <dcterms:publisher rdf:resource="http://www.oeg-upm.net/"/>
-    <bibo:doi>https://doi.org/10.25504/FAIRsharing.e7e609</bibo:doi>
-    <dcterms:bibliographicCitation>Idafen Santana Pérez, María Poveda Villalón. The FAIR Review Ontology. Revision: 2.0.0. http://purl.org/spar/fr.</dcterms:bibliographicCitation>
-    <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/fr"/>
     <dcterms:source rdf:resource="https://github.com/SPAROntologies/fr/blob/master/docs/cq.md"/>
-    <foaf:logo rdf:resource="https://github.com/SPAROntologies/fr/blob/master/spar.png"/>
-    <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/fr"/>
-    <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
+    <bibo:doi>https://doi.org/10.25504/FAIRsharing.e7e609</bibo:doi>
     <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
+    <vann:changes rdf:resource="https://github.com/SPAROntologies/fr/blob/master/CHANGELOG.md"/>
     <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
-    <schema:keywords xml:lang="en">semantic publishing</schema:keywords>
+    <vann:preferredNamespaceUri>http://purl.org/spar/fr</vann:preferredNamespaceUri>
+    <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/fr"/>
+    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/fr/2026-08-14"/>
+    <owl:imports rdf:resource="http://purl.org/spar/datacite"/>
+    <owl:priorVersion rdf:resource="http://purl.org/spar/fr/2026-08-14"/>
+    <owl:versionIRI rdf:resource="http://purl.org/spar/fr/2026-10-05"/>
+    <owl:versionInfo>2.0.1</owl:versionInfo>
+    <foaf:logo rdf:resource="https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png"/>
+    <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/fr"/>
+    <schema:image rdf:resource="https://github.com/SPAROntologies/fr/blob/master/docs/current/fr.png"/>
+    <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
+    <dc:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+    <schema:keywords xml:lang="en">SPAR Ontologies</schema:keywords>
+    <schema:keywords xml:lang="en">Semantic Publishing and Referencing Ontologies</schema:keywords>
+    <schema:keywords xml:lang="en">bibliometrics</schema:keywords>
     <schema:keywords xml:lang="en">scholarly publishing</schema:keywords>
     <schema:keywords xml:lang="en">scholarly reviews</schema:keywords>
     <schema:keywords xml:lang="en">scientometrics</schema:keywords>
-    <schema:keywords xml:lang="en">bibliometrics</schema:keywords>
-    <schema:image rdf:resource="https://github.com/SPAROntologies/fr/blob/master/docs/current/fr.png"/>
-    <vann:changes xml:lang="en">
-* **v2.0.0**: 
-Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-Added the additional classes and properties from external ontologies.
-Replaced `fr:ratingValue` with `bido:hasRatingValue`, given they were identical in their implementation and the latter already existed.
-Replaced `skos:inScheme` with `bido:isDefinedIn`, given it is its subproperty that is appliable to categorical bibliometric data, such as in this case.
-	</vann:changes>
+    <schema:keywords xml:lang="en">semantic publishing</schema:keywords>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">resource identifier scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">The identifier scheme used to identify a resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b6"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">concept scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2008/05/skos#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/Identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">An identifier that uniquely identities an entity, such as a funding agency, a person or a resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b10"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b11"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2010/06/literalreification/Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fr/hasRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has rating</rdfs:label>
+    <vann:example>
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasRating bido:sa-sr-bl-wacc .
+
+	bido:sa-sr-bl-wacc a bido:ReviewRatingValue .
+    </vann:example>
+    <rdfs:comment xml:lang="en">The relation between a review and a given rating assigned by a reviewer.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:range rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has license</rdfs:label>
+    <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/CategorialBibliometricData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">categorial bibliometric data</rdfs:label>
+    <rdfs:comment xml:lang="en">Categorical information that characterises publication-related entities from a bibliometric point of view.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/hasIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">A unique identifier for the entity (either a funder, a person, a license or a resource).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:range rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has creator</rdfs:label>
+    <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -207,54 +373,114 @@ Replaced `skos:inScheme` with `bido:isDefinedIn`, given it is its subproperty th
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceScale"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb9">
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/AgentIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">agent identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">An identifier that uniquely identities an individual agent.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b9"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2010/06/literalreification/Literal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">literal</rdfs:label>
+    <rdfs:comment xml:lang="en">A reified literal.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/literal/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">comment</rdfs:label>
+    <rdfs:comment xml:lang="en">A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b6">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb10"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifier"/>
+    <owl:onProperty rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b7"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/ReviewRatingValue">
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">personal identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">An identifier that uniquely identifies an individual person.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b3"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/hasRatingValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has rating value</rdfs:label>
+    <rdfs:comment xml:lang="en">The value of the rating given to a review.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdfs:comment xml:lang="en">The set of values of a given rating scale.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
-    <rdfs:label xml:lang="en">review rating concept</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
+  <rdf:Description rdf:about="http://purl.org/spar/bido/DiscreteReviewRatingScale">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">personal identifier scheme</rdfs:label>
-    <rdfs:comment xml:lang="en">The identifier scheme used to identify a person.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb9"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
+    <rdfs:label xml:lang="en">discrete review rating scale</rdfs:label>
+    <rdfs:comment xml:lang="en">A discrete scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ReviewRatingScale"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">concept scheme</rdfs:label>
-    <rdfs:comment xml:lang="en">A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2008/05/skos#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifierScheme">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">resource identifier scheme</rdfs:label>
-    <rdfs:comment xml:lang="en">The identifier scheme used to identify a resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb11"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/ConveningOrganization">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    <rdfs:comment xml:lang="en">A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions.</rdfs:comment>
-    <rdfs:label xml:lang="en">convening organization</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/spar/fr/hasReviewerConfidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has reviewer confidence</rdfs:label>
     <vann:example>
-	:my-review a fabio:Review ;
-		frbr:realization :my-review-version ;
-		fr:issuedFor :my-convening-organization .
+	:my-review-version a fr:ReviewVersion ;
+		fr:hasReviewerConfidence bido:acl-1-5-acl4 .
 
-	:my-convening-organization a fr:ConveningOrganization .
+	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .
     </vann:example>
+    <rdfs:comment>Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:range rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Review">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">review</rdfs:label>
+    <rdfs:comment xml:lang="en">A review of others' work.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/isDefinedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is defined in ranking</rdfs:label>
+    <rdfs:comment xml:lang="en">A relation between a ranking category and the ranking that defines it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/IdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">identifier scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">The identifier scheme used to identify an entity such as a funding agency, a person or a resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ScholarlyVenueManagementSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">scholarly venue management system</rdfs:label>
+    <rdfs:comment xml:lang="en">A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/cito/repliesTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">replies to</rdfs:label>
+    <rdfs:comment xml:lang="en">A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/cito/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">resource identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">An identifier that is used to uniquely identify a resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b8"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Work">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -266,17 +492,41 @@ A work is an abstract entity; there is no single material object one can point t
         </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy">
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onClass rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fr/issuedFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">issued for</rdfs:label>
+    <vann:example>
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version ;
+		fr:issuedFor :my-convening-organization .
+
+	:my-convening-organization a fr:ConveningOrganization .
+    </vann:example>
+    <rdfs:comment xml:lang="en">The relation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Review"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:range rdf:resource="http://purl.org/spar/fr/ConveningOrganization"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-    <rdfs:label xml:lang="en">policy</rdfs:label>
-    <rdfs:comment xml:lang="en">A non-empty group of permissions and/or prohibitions.</rdfs:comment>
+    <rdfs:label xml:lang="en">agent</rdfs:label>
+    <rdfs:comment xml:lang="en">An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fr/releasedBy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    <rdfs:comment xml:lang="en">The relation between a review and the agent publishing it. It might be the author of the review or conference or journal to which the scientific resource was submitted to.</rdfs:comment>
     <rdfs:label xml:lang="en">released by</rdfs:label>
     <vann:example>
 	:my-review-version a fr:ReviewVersion ;
@@ -284,31 +534,19 @@ A work is an abstract entity; there is no single material object one can point t
 
 	:my-conference a foaf:Agent .
     </vann:example>
+    <rdfs:comment xml:lang="en">The relation between a review and the agent publishing it. It might be the author of the review or conference or journal to which the scientific resource was submitted to.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/TrackingSystem">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ScholarlyVenueManagementSystem"/>
-    <rdfs:comment xml:lang="en">The platform where the review process takes place.</rdfs:comment>
-    <rdfs:label xml:lang="en">tracking system</rdfs:label>
-    <vann:example>
-	:my-review a fabio:Review ;
-		frbr:realization :my-review-version ;
-		fr:issuedAt :my-tracking-system .
-
-	:my-tracking-system a fr:TrackingSystem .
-    </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fabio/hasURL">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has URL</rdfs:label>
-    <rdfs:comment xml:lang="en">An identifier, in form of an HTTP Universal Resource Locator (URL), for a particular resource on the World Wide Web.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has realization</rdfs:label>
+    <rdfs:comment xml:lang="en">The expression that is a realization of a work.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -319,49 +557,40 @@ A work is an abstract entity; there is no single material object one can point t
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/literal/"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/language">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:label xml:lang="en">has language</rdfs:label>
-    <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/AgentIdentifierScheme">
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">agent identifier scheme</rdfs:label>
-    <rdfs:comment xml:lang="en">The identifier scheme used to identify an agent.</rdfs:comment>
+    <rdfs:label xml:lang="en">personal identifier scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">The identifier scheme used to identify a person.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb7"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b4"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/hasRatingValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:comment xml:lang="en">The value of the rating given to a review.</rdfs:comment>
-    <rdfs:label xml:lang="en">has rating value</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Work">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:label xml:lang="en">has license</rdfs:label>
-    <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:label xml:lang="en">work</rdfs:label>
+    <rdfs:comment xml:lang="en">A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/ReviewerConfidenceValue">
+  <rdf:Description rdf:about="http://purl.org/spar/fr/ConveningOrganization">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdfs:comment xml:lang="en">The set of values of a given confidence scale.</rdfs:comment>
-    <rdfs:label xml:lang="en">reviewer confidence value</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">uses identifier scheme</rdfs:label>
-    <rdfs:comment xml:lang="en">The identifier scheme used to provide the identifier for an entity (either a funder, a person, a license or a resource).</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/spar/datacite/Identifier"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+    <rdfs:label xml:lang="en">convening organization</rdfs:label>
+    <vann:example>
+	:my-review a fabio:Review ;
+		frbr:realization :my-review-version ;
+		fr:issuedFor :my-convening-organization .
+
+	:my-convening-organization a fr:ConveningOrganization .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A venue (e.g. conference, workshop), a expression collection (e.g. journal, special issue), or an individual agent (e.g. organization, researcher) collecting scientific contributions.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/bido/ReviewRatingScale">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -370,306 +599,12 @@ A work is an abstract entity; there is no single material object one can point t
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">resource identifier</rdfs:label>
-    <rdfs:comment xml:lang="en">An identifier that is used to uniquely identify a resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb4"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/hasReviewerConfidence">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
-    <rdfs:comment>Relation between a review and the confidence set by the author about the review topic. As the review can be written only by one author, the confidence is assumed to be for such author about the given paper without need of creating a new class involving the three actors in a n-ary alike solution.</rdfs:comment>
-    <rdfs:label xml:lang="en">has reviewer confidence</rdfs:label>
-    <vann:example>
-	:my-review-version a fr:ReviewVersion ;
-		fr:hasReviewerConfidence bido:acl-1-5-acl4 .
-
-	bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue .
-    </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb11">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb12"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/hasIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">has identifier</rdfs:label>
-    <rdfs:comment xml:lang="en">A unique identifier for the entity (either a funder, a person, a license or a resource).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/datacite/Identifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/Identifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">identifier</rdfs:label>
-    <rdfs:comment xml:lang="en">An identifier that uniquely identities an entity, such as a funding agency, a person or a resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb1"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb2"/>
-    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2010/06/literalreification/Literal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/hasConfidenceValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:comment xml:lang="en">The confidence value of expertise in the review topic given by the reviewer.</rdfs:comment>
-    <rdfs:label xml:lang="en">has confidence value</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/AgentIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">agent identifier</rdfs:label>
-    <rdfs:comment xml:lang="en">An identifier that uniquely identities an individual agent.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <owl:disjointWith rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb5"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/isDefinedIn">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">is defined in ranking</rdfs:label>
-    <rdfs:comment xml:lang="en">A relation between a ranking category and the ranking that defines it.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fabio/Review">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
-    <rdfs:comment xml:lang="en">A review of others' work.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">review</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">personal identifier</rdfs:label>
-    <rdfs:comment xml:lang="en">An identifier that uniquely identifies an individual person.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <rdfs:subClassOf rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb6"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/CategorialBibliometricData">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">categorial bibliometric data</rdfs:label>
-    <rdfs:comment xml:lang="en">Categorical information that characterises publication-related entities from a bibliometric point of view.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/issuedAt">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Review"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/fr/TrackingSystem"/>
-    <rdfs:comment xml:lang="en">The relation between a review and the tracking or scholarly venue management system where the reviewing process took place.</rdfs:comment>
-    <rdfs:label xml:lang="en">issued at</rdfs:label>
-    <vann:example>
-	:my-review a fabio:Review ;
-		frbr:realization :my-review-version ;
-		fr:issuedAt :my-tracking-system .
-
-	:my-tracking-system a fr:TrackingSystem .
-    </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/hasSubReviewer">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    <rdfs:comment xml:lang="en">The relation between a review and agents that have contributed to the overall review as sub-reviwers.</rdfs:comment>
-    <rdfs:label xml:lang="en">has sub-reviewer</rdfs:label>
-    <vann:example>
-	:my-review-version a fr:ReviewVersion ;
-		fr:hasSubReviewer :my-person .
-	
-	:my-person a foaf:Agent .
-    </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/ScholarlyVenueManagementSystem">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">scholarly venue management system</rdfs:label>
-    <rdfs:comment xml:lang="en">A venue management system (such as a conference management system or a journal management system) that can be used for managing scholarly venues.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has date issued</rdfs:label>
-    <rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/issuedFor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Review"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/fr/ConveningOrganization"/>
-    <rdfs:comment xml:lang="en">The realation between a review and the entity (e.g. conference, journal) that it was issued for (usually the one that requested the review).</rdfs:comment>
-    <rdfs:label xml:lang="en">issued for</rdfs:label>
-    <vann:example>
-	:my-review a fabio:Review ;
-		frbr:realization :my-review-version ;
-		fr:issuedFor :my-convening-organization .
-
-	:my-convening-organization a fr:ConveningOrganization .
-    </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/IdentifierScheme">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">identifier scheme</rdfs:label>
-    <rdfs:comment xml:lang="en">The identifier scheme used to identify an entity such as a funding agency, a person or a resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">expression</rdfs:label>
     <rdfs:comment xml:lang="en">A subclass of FRBR Expression, restricted to expressions of `fabio:Work`.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    <rdfs:label xml:lang="en">expression</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://lexvo.org/ontology#Language">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">language</rdfs:label>
-    <rdfs:comment xml:lang="en">Groups of human language variants that are or were spoken, written, or signed at some point in time.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://lexvo.org/ontology#"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb8"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
-    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb10">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/ReviewVersion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Comment"/>
-    <rdfs:comment xml:lang="en">A version of a given review, defining its content and rating, which may vary over the time.</rdfs:comment>
-    <rdfs:label xml:lang="en">review version</rdfs:label>
-    <vann:example>
-	:my-review a fabio:Review ;
-		frbr:realization :my-review-version .
-
-	:my-review-version a fr:ReviewVersion ;
-		fr:hasRating bido:sa-sr-bl-wacc ;
-		fr:hasReviewerConfidence bido:acl-1-5-acl4 ;
-		fr:hasSubReviewer :my-person ;
-		fr:releasedBy :my-conference .
-    </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:label>has creator</rdfs:label>
-    <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fabio/Comment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-    <rdfs:comment xml:lang="en">A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:label xml:lang="en">comment</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/cito/repliesTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">replies to</rdfs:label>
-    <rdfs:comment xml:lang="en">A relation according to which the citing entity replies to statements, ideas or criticisms presented in the cited entity.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/cito/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realization">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">has realization</rdfs:label>
-    <rdfs:comment xml:lang="en">The expression that is a realization of a work.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fr/hasRating">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/spar/fr/ReviewVersion"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
-    <rdfs:comment xml:lang="en">The relation between a review and a given rating assigned by a reviewer.</rdfs:comment>
-    <rdfs:label xml:lang="en">has rating</rdfs:label>
-    <vann:example>
-	:my-review-version a fr:ReviewVersion ;
-		fr:hasRating bido:sa-sr-bl-wacc .
-
-	bido:sa-sr-bl-wacc a bido:ReviewRatingValue .
-    </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fr/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/DiscreteReviewRatingScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">discrete review rating scale</rdfs:label>
-    <rdfs:comment xml:lang="en">A discrete scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ReviewRatingScale"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/cito/reviews">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">reviews</rdfs:label>
-    <rdfs:comment xml:lang="en">A relation according to which the citing entity reviews statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/cito/"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
-    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/c4o/hasContent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has content</rdfs:label>
-    <rdfs:comment xml:lang="en">The textual content of a particular FRBR expression.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/c4o/"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">endeavour</rdfs:label>
-    <rdfs:comment xml:lang="en">The set of different aspects of user interests in the products of intellectual or artistic artifact.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb3">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">agent</rdfs:label>
-    <rdfs:comment xml:lang="en">An agent (eg. person, group, software or physical artifact).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.essepuntato.it/2010/06/literalreification/Literal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">literal</rdfs:label>
-    <rdfs:comment xml:lang="en">A reified literal.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/literal/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/bido/ReviewerConfidenceScale">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -678,50 +613,107 @@ A work is an abstract entity; there is no single material object one can point t
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
-    <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fabio/Work">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A subclass of FRBR Work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <rdfs:label xml:lang="en">work</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">expression</rdfs:label>
-    <rdfs:comment xml:lang="en">
-The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
-
-An expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. 
-Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.
-        </rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:label xml:lang="en">has date modified</rdfs:label>
     <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has date issued</rdfs:label>
+    <rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">expression</rdfs:label>
+    <rdfs:comment xml:lang="en">
+The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+
+An expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. 
+Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.
+        </rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb12">
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lexvo.org/ontology#Language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">language</rdfs:label>
+    <rdfs:comment xml:lang="en">Groups of human language variants that are or were spoken, written, or signed at some point in time.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://lexvo.org/ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b2"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/cito/reviews">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">reviews</rdfs:label>
+    <rdfs:comment xml:lang="en">A relation according to which the citing entity reviews statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/cito/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">policy</rdfs:label>
+    <rdfs:comment xml:lang="en">A non-empty group of permissions and/or prohibitions.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b2">
     <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/AgentIdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">agent identifier scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">The identifier scheme used to identify an agent.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <rdfs:subClassOf rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b1"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ReviewerConfidenceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">reviewer confidence value</rdfs:label>
+    <rdfs:comment xml:lang="en">The set of values of a given confidence scale.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b5"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has language</rdfs:label>
+    <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ReviewRatingValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">review rating concept</rdfs:label>
+    <rdfs:comment xml:lang="en">The set of values of a given rating scale.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b7">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b12">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9816a97a4adb4b7390cc043208e0097fb8">
+  <rdf:Description rdf:nodeID="nc001a537b488402f9048a6db3c0dfea8b5">
     <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
   </rdf:Description>
 </rdf:RDF>

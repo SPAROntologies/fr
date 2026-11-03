@@ -1,0 +1,9 @@
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+literal:Literal a owl:Class ;
+    rdfs:label "literal"@en ;
+    rdfs:comment "A reified literal."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/literal/> .
+
